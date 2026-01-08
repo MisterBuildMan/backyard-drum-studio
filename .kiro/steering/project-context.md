@@ -6,8 +6,12 @@ This is a DIY backyard drum studio build documentation project.
 
 - **Name:** Backyard Drum Studio
 - **Purpose:** Sound-isolated space for acoustic drum recording and practice
-- **Location:** Residential backyard
+- **Location:** Cedar Park, Texas - residential backyard (~0.3 acres)
+- **Structure Type:** Permanent accessory building
 - **Foundation:** Concrete slab (to be poured)
+- **HVAC:** Required (Austin climate)
+- **Electrical:** Available nearby
+- **HOA:** None
 - **Key Challenge:** Sound isolation (targeting STC 55-60)
 
 ## Repository Structure
