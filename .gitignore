@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# SketchUp backup files
+*.skb
+~*
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
