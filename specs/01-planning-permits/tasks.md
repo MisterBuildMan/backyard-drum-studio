@@ -7,9 +7,10 @@ Research Austin building codes, select the building site, determine structure si
 ## Tasks
 
 - [ ] 1. Research Cedar Park building codes
-  - [ ] 1.1 Look up property zoning district
+  - [x] 1.1 Look up property zoning district
     - Use Williamson County property search or Cedar Park GIS
     - _Requirements: 1.1_
+    - _Completed: 2026-01-20_
   - [ ] 1.2 Document setback requirements for accessory structures
     - Check Cedar Park zoning ordinances for your zoning district
     - _Requirements: 1.2_

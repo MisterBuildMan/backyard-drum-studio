@@ -14,7 +14,7 @@ This document captures the findings, decisions, and documentation gathered durin
 
 **Address:** [To be documented]
 
-**Zoning District:** [To be researched]
+**Zoning District:** SR (Suburban Residential)
 
 **Lot Size:** ~0.3 acres
 
@@ -103,3 +103,5 @@ This document captures the findings, decisions, and documentation gathered durin
 
 - [City of Cedar Park Development Services](https://www.cedarparktexas.gov/departments/development-services)
 - [Cedar Park Permits & Inspections](https://www.cedarparktexas.gov/departments/development-services/permits-inspections)
+- [Official Zoning Map (PDF)](https://www.cedarparktexas.gov/DocumentCenter/View/2199/Official-Zoning-Map-42x68-PDF)
+- [CPAtlas Interactive Map](https://www.cpatlas.com/atlas.aspx?Section=All-In-One)
