@@ -17,8 +17,9 @@ Research Austin building codes, select the building site, determine structure si
     - [ ] 1.2.1 Clarify "Setback from Principal Building per IBC/IRC" requirement
       - Contact Cedar Park Development Services to confirm minimum separation between accessory building and main house
       - IRC R302.1 does not require fire separation between dwelling and accessory buildings on same lot - need to verify what Cedar Park is referencing
-  - [ ] 1.3 Document height restrictions
+  - [x] 1.3 Document height restrictions
     - _Requirements: 1.3_
+    - _Completed: 2026-01-20_
   - [ ] 1.4 Calculate current impervious cover and limits
     - Measure existing structures, driveways, patios
     - _Requirements: 1.4_

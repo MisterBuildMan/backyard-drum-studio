@@ -68,6 +68,23 @@ Per Cedar Park Code [§ 11.04.002](https://ecode360.com/38613286) - Accessory Bu
 
 ---
 
+### Height Restrictions
+
+Per Cedar Park Code [§ 11.04.002](https://ecode360.com/38613286) - Accessory Building and Structure Standards:
+
+**For accessory buildings > 180 sq ft** (which applies to this project):
+- Maximum height = Equal to principal building
+
+**Principal building height for established neighborhoods:** Per [§ 11.03.033](https://ecode360.com/38612820) (Standards for Established Neighborhoods), principal buildings in existing platted subdivisions may be "constructed, redeveloped or expanded to the same dimensions of building height" as existing buildings. This means the height limit is based on your existing house height, not a fixed number.
+
+**Practical implication:** Measure your existing house height to determine the maximum allowed height for the accessory building.
+
+**For smaller accessory buildings (reference):**
+- < 80 sq ft: 12 ft max height
+- 81-180 sq ft: 15 ft max height
+
+---
+
 ### Selected Site
 
 **Location:** [To be determined]
@@ -141,6 +158,7 @@ Per Cedar Park Code [§ 11.04.002](https://ecode360.com/38613286) - Accessory Bu
 - [Official Zoning Map (PDF)](https://www.cedarparktexas.gov/DocumentCenter/View/2199/Official-Zoning-Map-42x68-PDF)
 - [CPAtlas Interactive Map](https://www.cpatlas.com/atlas.aspx?Section=All-In-One)
 - [Cedar Park Code of Ordinances - eCode360](https://ecode360.com/CE6271)
+  - [§ 11.03.033 - Established Neighborhood Standards](https://ecode360.com/38612820)
   - [§ 11.04.002 - Accessory Building and Structure Standards](https://ecode360.com/38613286)
   - [§ 11.03.061A - Residential Lot and Building Standards](https://ecode360.com/38612850)
   - [§ 11.04.031 - Residential Accessory Buildings](https://ecode360.com/38613288)
