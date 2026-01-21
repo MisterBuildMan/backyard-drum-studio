@@ -10,6 +10,16 @@ This document captures the findings, decisions, and documentation gathered durin
 
 ## Specifications
 
+### Project Classification
+
+This project is classified as an [**Accessory Building**](https://ecode360.com/38613780) per Cedar Park Code: *"An enclosed accessory structure with a roof, used or intended for supporting or sheltering a use."*
+
+Note: "Accessory building" (enclosed with roof) differs from "accessory structure" (broader term including non-enclosed structures). Both terms appear in the setback table but have identical requirements for structures >180 sq ft.
+
+This is NOT an Accessory Dwelling Unit (ADU) since it will not contain sleeping accommodations, kitchen facilities, or plumbing.
+
+---
+
 ### Property Information
 
 **Address:** [To be documented]
@@ -24,12 +34,37 @@ This document captures the findings, decisions, and documentation gathered durin
 
 ### Setback Requirements
 
+Per Cedar Park Code [§ 11.04.002](https://ecode360.com/38613286) - Accessory Building and Structure Standards:
+
+**For accessory buildings > 180 sq ft** (which applies to this project):
+
+| Requirement | Standard |
+|-------------|----------|
+| Interior Side Setback | Equal to principal building |
+| Street Side Setback | Equal to principal building |
+| Rear Setback | Equal to principal building |
+| Street Side Rear Setback | Equal to principal building |
+| Setback from Principal Building | Per IBC/IRC |
+
+**Setback from Principal Building (IBC/IRC):** The Cedar Park code references IBC/IRC for the minimum separation between an accessory building and the principal dwelling. Note: Per [IRC R302.1](https://up.codes/s/exterior-wall-location), there is actually **no fire separation distance requirement** between a dwelling and accessory buildings on the same lot. The specific IBC/IRC section Cedar Park is referencing needs clarification - contact Development Services to confirm the exact requirement before finalizing site placement.
+
+**Principal building setbacks for SR district** per [§ 11.03.061A](https://ecode360.com/38612850):
+
 | Direction | Required Setback | Notes |
 |-----------|-----------------|-------|
-| Front | [TBD] | |
-| Rear | [TBD] | |
-| Side (left) | [TBD] | |
-| Side (right) | [TBD] | |
+| Front | 30 ft | |
+| Rear | 25 ft | May reduce 5 ft to preserve heritage trees (admin approval) |
+| Interior Side | 12 ft | |
+| Street Side | 20 ft | For corner lots |
+
+**For smaller accessory buildings (reference):**
+- < 80 sq ft: 5 ft side/rear setbacks
+- 81-180 sq ft: 5 ft interior side, 10 ft street side, 5 ft rear
+
+**Additional notes:**
+- Setbacks may be reduced up to 5 ft to preserve protected/heritage trees (requires administrator approval)
+- Rear setbacks on double frontage lots = same as front setback (30 ft)
+- Structures over 80 sq ft require a building permit per [§ 11.04.031](https://ecode360.com/38613288)
 
 ---
 
@@ -105,3 +140,8 @@ This document captures the findings, decisions, and documentation gathered durin
 - [Cedar Park Permits & Inspections](https://www.cedarparktexas.gov/departments/development-services/permits-inspections)
 - [Official Zoning Map (PDF)](https://www.cedarparktexas.gov/DocumentCenter/View/2199/Official-Zoning-Map-42x68-PDF)
 - [CPAtlas Interactive Map](https://www.cpatlas.com/atlas.aspx?Section=All-In-One)
+- [Cedar Park Code of Ordinances - eCode360](https://ecode360.com/CE6271)
+  - [§ 11.04.002 - Accessory Building and Structure Standards](https://ecode360.com/38613286)
+  - [§ 11.03.061A - Residential Lot and Building Standards](https://ecode360.com/38612850)
+  - [§ 11.04.031 - Residential Accessory Buildings](https://ecode360.com/38613288)
+  - [Definitions - Accessory Building](https://ecode360.com/38613780)

@@ -11,9 +11,12 @@ Research Austin building codes, select the building site, determine structure si
     - Use Williamson County property search or Cedar Park GIS
     - _Requirements: 1.1_
     - _Completed: 2026-01-20_
-  - [ ] 1.2 Document setback requirements for accessory structures
+  - [-] 1.2 Document setback requirements for accessory structures
     - Check Cedar Park zoning ordinances for your zoning district
     - _Requirements: 1.2_
+    - [ ] 1.2.1 Clarify "Setback from Principal Building per IBC/IRC" requirement
+      - Contact Cedar Park Development Services to confirm minimum separation between accessory building and main house
+      - IRC R302.1 does not require fire separation between dwelling and accessory buildings on same lot - need to verify what Cedar Park is referencing
   - [ ] 1.3 Document height restrictions
     - _Requirements: 1.3_
   - [ ] 1.4 Calculate current impervious cover and limits
