@@ -9,7 +9,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
 ## [Unreleased]
 
 ### Planning & Permits
-- **Completed:** Research lot coverage limits (Task 1.4)
+- **Completed:** Look up property zoning district (Task 1.1) - 2026-01-20
+  - Identified SR (Suburban Residential) zoning
+- **Completed:** Document setback requirements (Task 1.2) - 2026-01-20
+  - Accessory buildings >180 sq ft: same setbacks as principal building
+  - SR district: 12ft interior side, 20ft street side, 25ft rear
+  - Subtask 1.2.1 pending: clarify IBC/IRC separation requirement
+- **Completed:** Document height restrictions (Task 1.3) - 2026-01-20
+  - Accessory buildings >180 sq ft: equal to principal building height
+- **Completed:** Research lot coverage limits (Task 1.4) - 2026-01-21
   - Found 20% back yard coverage limit for accessory buildings (§ 11.04.001(F))
   - Back yard: ~6,600 sq ft → 1,320 sq ft max for accessory buildings
   - Detached garage uses 400 sq ft → 920 sq ft available for studio
