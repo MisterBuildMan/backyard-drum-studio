@@ -28,7 +28,7 @@ This is NOT an Accessory Dwelling Unit (ADU) since it will not contain sleeping 
 
 **Lot Size:** ~0.3 acres
 
-**Current Impervious Cover:** [To be calculated]
+**Current Impervious Cover:** [To be measured - see calculation worksheet below]
 
 ---
 
@@ -82,6 +82,43 @@ Per Cedar Park Code [§ 11.04.002](https://ecode360.com/38613286) - Accessory Bu
 **For smaller accessory buildings (reference):**
 - < 80 sq ft: 12 ft max height
 - 81-180 sq ft: 15 ft max height
+
+---
+
+### Lot Coverage / Impervious Cover
+
+**Definition:** Per Cedar Park Code [§ 14.07.002](https://ecode360.com/38625705), "Lot coverage" means "the impervious area of a lot, including but not limited to the area covered by parking spaces, driveways, sidewalks, rocked areas, and equipment pads located thereon."
+
+### Accessory Building Coverage Limit
+
+Per Cedar Park Code [§ 11.04.001(F)](https://ecode360.com/38613279) - Residential accessory building coverage:
+
+> "The total of all accessory buildings cannot exceed **20 percent coverage of the back yard** of a single-family residence, and each accessory building shall not exceed the size of the principal building."
+
+**This is the key constraint for the studio.**
+
+#### Back Yard Coverage Calculation
+
+| Item | Value |
+|------|-------|
+| **Back yard area** | ~6,600 sq ft (85×60 + 50×30, per Google Maps) |
+| **20% maximum** | **1,320 sq ft** |
+| Detached garage | 400 sq ft (20×20) |
+| **Available for studio** | **920 sq ft** |
+
+*Note: Measurements from Google Maps are approximate. Verify with physical measurement or survey for permit application.*
+
+#### Additional Rules (§ 11.04.001(F)):
+1. Sum of all accessory uses in principal building ≤ 25% of principal building gross floor area
+2. Each accessory building ≤ size of principal building
+3. For lots ≥ 5 acres: total accessory buildings ≤ 4,000 sq ft
+
+**Note:** "Back yard" typically means the area behind the rear building line of the principal structure. Measure from the back of your house to the rear property line, between the side property lines.
+
+**References:**
+- [§ 11.04.001(F) - Residential Accessory Building Coverage](https://ecode360.com/38613279)
+- [§ 14.07.002 - General Definitions (Lot coverage)](https://ecode360.com/38625705)
+- [§ 11.03.032 - Conformity](https://ecode360.com/38612826)
 
 ---
 

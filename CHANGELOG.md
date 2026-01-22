@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
 
 ## [Unreleased]
 
+### Planning & Permits
+- **Completed:** Research lot coverage limits (Task 1.4)
+  - Found 20% back yard coverage limit for accessory buildings (§ 11.04.001(F))
+  - Back yard: ~6,600 sq ft → 1,320 sq ft max for accessory buildings
+  - Detached garage uses 400 sq ft → 920 sq ft available for studio
+
 ### Project Setup
 - Initialized repository structure
 - Added project documentation and conventions

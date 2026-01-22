@@ -20,9 +20,13 @@ Research Austin building codes, select the building site, determine structure si
   - [x] 1.3 Document height restrictions
     - _Requirements: 1.3_
     - _Completed: 2026-01-20_
-  - [ ] 1.4 Calculate current impervious cover and limits
-    - Measure existing structures, driveways, patios
+  - [x] 1.4 Calculate current impervious cover and limits
+    - ~~Check subdivision plat for any recorded restrictions~~
+    - Found: 20% back yard coverage limit for accessory buildings (§ 11.04.001(F))
+    - Measure back yard area and calculate maximum allowed
     - _Requirements: 1.4_
+    - _Completed: 2026-01-21_
+    - _Notes: Key limit is 20% of back yard, not total lot. Need to measure back yard and any existing accessory buildings._
   - [ ] 1.5 Research requirements for structures with electrical/HVAC
     - _Requirements: 1.5_
 
