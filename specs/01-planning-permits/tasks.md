@@ -2,7 +2,7 @@
 
 ## Overview
 
-Research Austin building codes, select the building site, determine structure size, and obtain all necessary permits before construction begins.
+Research Austin building codes, select the building site, and obtain all necessary permits before construction begins.
 
 ## Tasks
 
@@ -53,60 +53,47 @@ Research Austin building codes, select the building site, determine structure si
   - [ ] 2.5 Document site selection in design.md
     - _Requirements: 2.5_
 
-- [ ] 3. Determine structure size
-  - [ ] 3.1 Calculate maximum footprint that fits setbacks
-    - _Requirements: 3.3_
-  - [ ] 3.2 Choose dimensions with good acoustic proportions
-    - Avoid 1:1 or 1:2 ratios
-    - _Requirements: 3.2_
-  - [ ] 3.3 Verify minimum 120 sq ft interior space
-    - Account for wall thickness (~12" for sound-isolated walls)
-    - _Requirements: 3.1_
-  - [ ] 3.4 Document preliminary dimensions in design.md
-    - _Requirements: 3.4_
-
-- [ ] 4. Checkpoint - Review before permit application
+- [ ] 3. Checkpoint - Review before permit application
   - Verify all code research is complete
   - Confirm site selection meets all requirements
-  - Confirm dimensions are finalized
+  - Note: Structure dimensions will be determined in Phase 2: Design
 
-- [ ] 5. Obtain building permit
-  - [ ] 5.1 Gather required documents for permit application
+- [ ] 4. Obtain building permit
+  - [ ] 4.1 Gather required documents for permit application
     - Site plan, floor plan, elevations (may need Phase 2 design first)
     - _Requirements: 4.1_
-  - [ ] 5.2 Submit building permit application
+  - [ ] 4.2 Submit building permit application
     - _Requirements: 4.2_
-  - [ ] 5.3 Respond to any plan review comments
+  - [ ] 4.3 Respond to any plan review comments
     - _Requirements: 4.3_
-  - [ ] 5.4 Receive permit approval
+  - [ ] 4.4 Receive permit approval
     - Document permit number and conditions
     - _Requirements: 4.3, 4.4_
 
-- [ ] 6. Obtain electrical permit
-  - [ ] 6.1 Determine electrical requirements
+- [ ] 5. Obtain electrical permit
+  - [ ] 5.1 Determine electrical requirements
     - Estimate amperage needs (HVAC, outlets, lighting)
     - _Requirements: 5.1_
-  - [ ] 6.2 Submit electrical permit application
+  - [ ] 5.2 Submit electrical permit application
     - _Requirements: 5.2_
-  - [ ] 6.3 Receive electrical permit approval
+  - [ ] 5.3 Receive electrical permit approval
     - _Requirements: 5.3_
 
-- [ ] 7. Document project scope
-  - [ ] 7.1 Finalize and document structure dimensions
+- [ ] 6. Document project scope
+  - [ ] 6.1 Finalize and document structure dimensions
     - _Requirements: 6.1_
-  - [ ] 7.2 Document site location with measurements
+  - [ ] 6.2 Document site location with measurements
     - _Requirements: 6.2_
-  - [ ] 7.3 Document permit numbers and conditions
+  - [ ] 6.3 Document permit numbers and conditions
     - _Requirements: 6.3_
-  - [ ] 7.4 Document known constraints
+  - [ ] 6.4 Document known constraints
     - _Requirements: 6.4_
-  - [ ] 7.5 Document feature list (HVAC, electrical, sound isolation goals)
+  - [ ] 6.5 Document feature list (HVAC, electrical, sound isolation goals)
     - _Requirements: 6.5_
 
-- [ ] 8. Final checkpoint - Phase 1 complete
+- [ ] 7. Final checkpoint - Phase 1 complete
   - All permits obtained
   - Site selected and documented
-  - Dimensions finalized
   - Ready to proceed to Phase 2: Design
 
 ---
