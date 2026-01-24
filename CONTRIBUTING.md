@@ -78,11 +78,15 @@ This project adapts the [Conventional Commits](https://www.conventionalcommits.o
 
 | Type | Use Case | Example |
 |------|----------|---------|
-| `spec` | Creating or modifying specs | `spec(foundation): add requirements for concrete slab` |
-| `work` | Construction progress updates | `work(foundation): complete rebar installation` |
-| `docs` | Project documentation, README | `docs: add commit conventions to CONTRIBUTING.md` |
+| `spec` | Creating or modifying spec structure (tasks, scope, requirements) | `spec(foundation): add requirements for concrete slab` |
+| `work` | Project progress: research, design work, construction, documentation that advances tasks | `work(foundation): complete rebar installation` |
+| `docs` | Project meta-documentation (README, CONTRIBUTING, steering) | `docs: add commit conventions to CONTRIBUTING.md` |
 | `media` | Adding photos, videos, design files | `media(foundation): add rebar inspection photos` |
 | `chore` | Project maintenance, reorganization | `chore: reorganize image folders` |
+
+**Clarification on `spec` vs `work`:**
+- `spec` = Changes to the spec structure itself (adding/removing tasks, changing requirements scope, reorganizing phases)
+- `work` = Actual work that fills in the specs (research findings, design decisions, construction progress, any content that advances a task)
 
 ### Commit Message Format
 
@@ -96,8 +100,8 @@ type(scope): brief description
 
 ### Commit Separation Rules
 
-- **Spec changes** = standalone commit (never mix with work updates)
-- **Work updates** = standalone commit
+- **Spec changes** = standalone commit (structural changes to tasks/requirements/scope)
+- **Work updates** = can include task status updates (marking progress) in the same commit
 - **Media** = can bundle multiple related photos
 - **Budget** = standalone or with related work update
 

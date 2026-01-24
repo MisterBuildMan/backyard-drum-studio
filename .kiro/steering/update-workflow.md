@@ -34,17 +34,17 @@ type(scope): brief description
 ```
 
 ### Types
-- `spec` - Spec changes (requirements, design, tasks)
-- `work` - Construction progress
-- `docs` - Documentation updates
+- `spec` - Spec structure changes (adding/removing tasks, changing scope or requirements)
+- `work` - Project progress (research, design work, construction, any content that advances tasks)
+- `docs` - Meta-documentation (README, CONTRIBUTING, steering files)
 - `media` - Photos/design files
 - `chore` - Maintenance
 
 ## Commit Separation Rules
 
-- Spec changes = standalone commit
-- Work updates = standalone commit  
-- Never mix spec changes with work updates in same commit
+- Spec structure changes (adding tasks, changing scope) = standalone commit
+- Work updates can include task status updates (marking progress) in the same commit
+- Never mix spec structure changes with work updates
 
 ## Example Update Flow
 
