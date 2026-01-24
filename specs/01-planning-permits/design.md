@@ -122,6 +122,102 @@ Per Cedar Park Code [§ 11.04.001(F)](https://ecode360.com/38613279) - Residenti
 
 ---
 
+### Electrical/HVAC Requirements
+
+This section documents the additional requirements for accessory structures with electrical service and HVAC systems.
+
+#### Permit Requirements
+
+Per Cedar Park Development Services, building permits must ensure compliance with applicable codes including **building, electric, mechanical, plumbing, fire and energy conservation** codes. For this project:
+
+| Permit Type | Required? | Notes |
+|-------------|-----------|-------|
+| Building Permit | Yes | Required for any structure >80 sq ft |
+| Electrical Permit | Yes | Separate permit for electrical work |
+| Mechanical Permit | Yes | Required for HVAC installation |
+
+**Key point:** Electrical and mechanical permits are typically separate from the building permit and may be pulled by the respective contractors.
+
+#### Electrical Service Requirements
+
+For a detached accessory building with electrical service, the following NEC (National Electrical Code) requirements apply:
+
+**Disconnecting Means (NEC 225.31-225.32):**
+- A disconnect must be provided for all ungrounded conductors supplying the building
+- The disconnect must be located at a readily accessible location nearest the point of entrance of the conductors
+- Can be installed inside or outside the building, but must be at the point of entry
+- Must be clearly labeled per NEC 110.22
+
+**Subpanel Requirements:**
+- A 4-wire feeder installation is required (two hots, one neutral, one equipment ground)
+- In the subpanel, neutral and ground must be separated (remove bonding jumper)
+- This creates a "floating neutral" - critical for safety
+- A separate equipment grounding bar must be installed and bonded to the panel enclosure
+
+**Grounding (NEC 250.32):**
+- Detached buildings typically require a local grounding electrode system (ground rods)
+- The equipment grounding conductor in the feeder connects the two buildings' grounding systems
+
+**Sizing Considerations:**
+- For a drum studio with HVAC, lighting, and outlets, a 60-100 amp subpanel is typical
+- Mini-split HVAC systems typically require a 230V/15-30A dedicated circuit
+- Plan for future capacity - easier to install larger wire/conduit now
+
+#### HVAC Requirements
+
+**Permit Requirements:**
+- Texas requires permits for new HVAC installations
+- Permit fees typically $75-200
+- Installation must be inspected for code compliance
+
+**System Options for Detached Buildings:**
+
+| System Type | Pros | Cons | Typical Cost |
+|-------------|------|------|--------------|
+| Ductless Mini-Split | Efficient, quiet (25-30 dB), heating + cooling, independent zone control | Higher upfront cost | $3,500-6,500 installed |
+| Window Unit | Low cost, easy install | Noisy, less efficient, struggles in extreme heat | $150-500 |
+| Portable AC | No permanent install | Very inefficient, noisy | $300-600 |
+
+**Recommendation:** A ductless mini-split is the best choice for a sound-isolated drum studio because:
+1. Quiet operation (critical for recording)
+2. Efficient in Texas heat (handles 100°F+ days)
+3. Provides both heating and cooling
+4. No ductwork required (simpler construction)
+5. Dehumidification mode helps protect equipment
+
+**Sizing for Studio:**
+- Base calculation: 20-25 BTU per sq ft
+- For a ~200 sq ft studio: 12,000-15,000 BTU unit
+- Add capacity for:
+  - Heat-generating equipment (amps, computers)
+  - Sound isolation (thick walls = less heat transfer, but also less ventilation)
+
+**Electrical Requirements for Mini-Split:**
+- Small units (9,000-12,000 BTU): 230V/15-20A dedicated circuit
+- Larger units (18,000+ BTU): 230V/30A dedicated circuit
+- Verify main panel has capacity before installation
+
+#### Energy Code Compliance
+
+Texas follows the International Energy Conservation Code (IECC). Key requirements:
+- Insulation minimums (R-13 walls, R-30 ceiling typical)
+- HVAC equipment efficiency ratings
+- May require Manual J load calculation for HVAC sizing
+
+#### Inspection Sequence
+
+Typical inspection sequence for a structure with electrical/HVAC:
+1. Foundation inspection (before pour)
+2. Framing inspection
+3. Electrical rough-in inspection
+4. Mechanical rough-in inspection
+5. Insulation inspection
+6. Final building inspection
+7. Final electrical inspection
+8. Final mechanical inspection
+
+---
+
 ### Selected Site
 
 **Location:** [To be determined]

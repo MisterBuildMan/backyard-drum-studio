@@ -27,7 +27,10 @@ Research Austin building codes, select the building site, determine structure si
     - _Requirements: 1.4_
     - _Completed: 2026-01-21_
     - _Notes: Key limit is 20% of back yard, not total lot. Need to measure back yard and any existing accessory buildings._
-  - [ ] 1.5 Research requirements for structures with electrical/HVAC
+  - [x] 1.5 Research requirements for structures with electrical/HVAC
+    - _Requirements: 1.5_
+    - _Completed: 2026-01-24_
+    - _Notes: Documented NEC requirements for detached building electrical (disconnect, subpanel, grounding), HVAC permit requirements, mini-split recommendation for sound isolation, and inspection sequence._
     - _Requirements: 1.5_
 
 - [ ] 2. Select building site
