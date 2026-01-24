@@ -6,8 +6,8 @@ Complete all design decisions, create construction drawings, and establish budge
 
 ## Tasks
 
-- [ ] 1. Determine structure dimensions
-  - [ ] 1.1 Research optimal room proportions for drum studios
+- [-] 1. Determine structure dimensions
+  - [x] 1.1 Research optimal room proportions for drum studios
     - Review acoustic ratio recommendations (Bolt, Louden, Bonello)
     - _Requirements: 1.3_
   - [ ] 1.2 Calculate exterior dimensions within constraints

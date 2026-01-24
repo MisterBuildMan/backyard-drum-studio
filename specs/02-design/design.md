@@ -13,42 +13,114 @@ This document captures all design decisions, specifications, and analysis for th
 
 ---
 
+## Room Proportions Analysis
+
+### Research Summary
+
+Room proportions affect how sound waves interact, creating "room modes" (standing waves) that can cause bass buildup or cancellation at certain frequencies. The goal is to distribute these modes evenly across the frequency spectrum.
+
+**Key findings from acoustic research:**
+
+1. **Bolt Area (1946):** R.H. Bolt identified a range of "good" ratios where room modes are evenly distributed. Not a single ratio, but a region of acceptable proportions.
+
+2. **Bonello Criterion (1981):** Proposed that the number of modes should increase with each 1/3 octave band, and no two modes should be within 5 Hz of each other.
+
+3. **Practical Reality:** Modern acousticians (Toole, et al.) note that wall construction, doors, and windows affect actual modal behavior - calculated modes rarely match measured modes exactly. Treatment is more important than perfect ratios.
+
+**Commonly cited "good" ratios (height : width : length):**
+
+| Source | Ratio | Notes |
+|--------|-------|-------|
+| Golden Ratio | 1 : 1.6 : 2.6 | Classic recommendation |
+| Bolt | 1 : 1.14 : 1.39 | Within Bolt area |
+| Louden | 1 : 1.28 : 1.54 | Optimized for mode distribution |
+| IEC 60268-13 | 1 : 1.1φ : 1.4φ | European standard |
+| Alternative | 1 : 1.4 : 1.9 | Favored by many acousticians |
+
+**Ratios to AVOID:**
+- 1:1:1 (cube) - modes stack at same frequencies
+- 1:2:2, 1:1:2, 2:2:4 - integer multiples cause mode stacking
+- Any two dimensions equal or one being exactly double another
+
+### Minimum Size for Drum Studio
+
+Research indicates:
+- **Minimum practical:** 150-200 sq ft for drums with some room to breathe
+- **Recommended:** 200-300 sq ft for good drum sound
+- **Drum kit footprint:** ~6×5 ft (30 sq ft) for standard 5-piece kit
+- **Working space:** Need 1-2 meters (3-6 ft) from walls for mic placement and to avoid muddy bass
+- **Ceiling height:** 8 ft minimum, 9-10 ft preferred for better vertical mode distribution
+
+### Constraints for This Project
+
+| Constraint | Value | Source |
+|------------|-------|--------|
+| Maximum footprint | 920 sq ft | 20% backyard limit minus garage |
+| Minimum interior | 120 sq ft | Project requirement |
+| Wall thickness | ~12" | Double-stud wall estimate |
+| Ceiling height | 8-10 ft | Code allows up to house height |
+| Setbacks | 12 ft side, 25 ft rear | SR district requirements |
+
+### Dimension Calculations
+
+**Target interior dimensions using 1:1.4:1.9 ratio with 9 ft ceiling:**
+- Height: 9 ft
+- Width: 9 × 1.4 = 12.6 ft → round to 12.5 ft
+- Length: 9 × 1.9 = 17.1 ft → round to 17 ft
+- Interior area: 12.5 × 17 = **212.5 sq ft** ✓ (exceeds 120 sq ft minimum)
+
+**Exterior dimensions (adding ~12" walls each side):**
+- Width: 12.5 + 2 = 14.5 ft
+- Length: 17 + 2 = 19 ft
+- Exterior footprint: 14.5 × 19 = **275.5 sq ft** ✓ (well under 920 sq ft limit)
+
+**Alternative: Smaller option using same ratio with 8 ft ceiling:**
+- Height: 8 ft
+- Width: 8 × 1.4 = 11.2 ft → round to 11 ft
+- Length: 8 × 1.9 = 15.2 ft → round to 15 ft
+- Interior area: 11 × 15 = **165 sq ft** ✓
+- Exterior footprint: 13 × 17 = **221 sq ft** ✓
+
+### Selected Proportions
+
+**Selected ratio:** 1 : 1.4 : 1.9 (height : width : length)
+
+**Reasoning:** 
+- Falls within Bolt area for good mode distribution
+- Widely recommended by professional acousticians
+- Provides adequate space for drums plus mic placement
+- Fits comfortably within site constraints
+
+---
+
 ## Structure Dimensions
 
-### Exterior Dimensions
+*Note: These are preliminary calculations based on the 1:1.4:1.9 ratio. Final dimensions will be determined after wall assembly selection (Task 2) and SketchUp modeling.*
+
+### Exterior Dimensions (Preliminary)
 
 | Dimension | Value | Notes |
 |-----------|-------|-------|
-| Length | [TBD] ft | |
-| Width | [TBD] ft | |
+| Length | ~19 ft | Preliminary - depends on wall assembly |
+| Width | ~14.5 ft | Preliminary - depends on wall assembly |
 | Height (to peak) | [TBD] ft | Must not exceed principal building |
-| Footprint | [TBD] sq ft | Max 920 sq ft available |
+| Footprint | ~275 sq ft | Max 920 sq ft available |
 
-### Interior Dimensions
+### Interior Dimensions (Target)
 
 | Dimension | Value | Notes |
 |-----------|-------|-------|
-| Length | [TBD] ft | Exterior minus wall thickness |
-| Width | [TBD] ft | Exterior minus wall thickness |
-| Ceiling height | [TBD] ft | Minimum 8 ft, target 9-10 ft |
-| Floor area | [TBD] sq ft | Minimum 120 sq ft required |
+| Length | ~17 ft | Target based on 1:1.4:1.9 ratio |
+| Width | ~12.5 ft | Target based on 1:1.4:1.9 ratio |
+| Ceiling height | 9 ft | Target for good acoustics |
+| Floor area | ~212 sq ft | Minimum 120 sq ft required |
 
-### Wall Thickness Calculation
+### Wall Thickness Estimate
 
 | Layer | Thickness | Notes |
 |-------|-----------|-------|
-| [TBD] | [TBD] | |
-| **Total wall thickness** | [TBD] | |
-
-### Room Proportions Analysis
-
-Ideal room ratios for acoustics (from various acoustic research):
-- 1 : 1.14 : 1.39 (Bolt ratio)
-- 1 : 1.28 : 1.54 (Louden ratio)
-- 1 : 1.60 : 2.33 (Bonello)
-
-**Selected proportions:** [TBD]
-**Reasoning:** [TBD]
+| Double-stud wall (estimated) | ~12" | See wall assembly section |
+| **Total per side** | ~12" | 24" total for both walls |
 
 ---
 
