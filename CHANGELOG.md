@@ -15,6 +15,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
   - Key drivers: eliminate rental costs/travel, immediate home access, gear security
   - Primary use: acoustic drum practice (3-4x/week) and recording
   - Secondary use: home office space
+- **Completed:** Document Intended Use (Task 2) - 2026-01-25
+  - 5-piece kit with 6 cymbals, 1-3 hour sessions
+  - Primary: practice, recording, video content
+  - Secondary: home office, mixing, leisure
+  - Special: video recording setup needed, no streaming/teaching
 
 ### Planning & Permits
 - **Completed:** Look up property zoning district (Task 1.1) - 2026-01-20

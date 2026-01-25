@@ -12,11 +12,12 @@ This phase produces the project brief document that captures motivation, intende
   - [x] 1.3 Answer: "Why is building better than alternatives?" (renting studio time, practice pads, converting existing room, etc.)
   _Completed: 2026-01-25_
 
-- [ ] 2. Document Intended Use
-  - [ ] 2.1 Describe a typical session in detail (instruments, people, activities)
-  - [ ] 2.2 Describe the range of uses (practice, recording, mixing, etc.)
-  - [ ] 2.3 Identify primary vs. secondary uses
-  - [ ] 2.4 Note any special requirements (video, streaming, teaching, etc.)
+- [x] 2. Document Intended Use
+  - [x] 2.1 Describe a typical session in detail (instruments, people, activities)
+  - [x] 2.2 Describe the range of uses (practice, recording, mixing, etc.)
+  - [x] 2.3 Identify primary vs. secondary uses
+  - [x] 2.4 Note any special requirements (video, streaming, teaching, etc.)
+  _Completed: 2026-01-25_
 
 - [ ] 3. Calculate Isolation Requirement
   - [ ] 3.1 Acquire or borrow a sound level meter (C-weighting capable)

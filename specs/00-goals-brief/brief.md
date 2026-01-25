@@ -41,15 +41,53 @@ Several factors drove this decision:
 
 ## 2. Intended Use
 
-*[To be completed in Task 2]*
+### A Typical Session
 
-### Primary Use
-- **Acoustic drum practice** — Target frequency: 3-4 sessions per week minimum
-- **Recording** — Capturing drum tracks for personal projects and collaborations (virtual and occasional live sessions)
+A typical session is 1-3 hours of playing along to favorite tracks. Occasionally this includes working through online courses or lessons. Some sessions are practice-pad only, focusing on fundamentals.
 
-### Secondary Use
-- **Home office** — Space for desk, PC workstation, and potentially a couch + TV
-- This is a distant secondary goal; drums remain the primary driver of all design decisions
+**Occupancy:** Usually solo (95% of the time). Occasional musician may join for a jam session.
+
+### Kit Setup
+
+5-piece acoustic drum kit:
+- **Snares:** 12" piccolo or 14" (multiple snares, swap as needed)
+- **Toms:** 10", 12", 14"
+- **Bass drum:** 20"
+- **Cymbals:** 15" hi-hats, 17" crash, 19" crash, 21" ride, 19" china, 9" splash
+
+### Range of Uses
+
+| Use | Frequency | Notes |
+|-----|-----------|-------|
+| **Drum practice** | Primary | Playing along to tracks, fundamentals |
+| **Recording** | Regular | Tracking drums for collaborations (send tracks to others) |
+| **Video recording** | Regular | Recording sessions for social media content |
+| **Mixing** | Regular | Same PC/monitors used for recording and office work |
+| **Jamming with others** | Occasional | Not primary use case |
+
+### Primary vs. Secondary Uses
+
+**Primary:**
+1. Acoustic drum practice (3-4x/week target)
+2. Recording drum tracks
+3. Video recording of sessions
+
+**Secondary:**
+1. Home office (desk, PC workstation, monitors)
+2. Mixing/editing
+3. Couch + TV (leisure)
+
+Drums drive all design decisions. Secondary uses must fit around the primary purpose.
+
+### Special Requirements
+
+| Requirement | Details |
+|-------------|---------|
+| **Video recording** | Need space for lighting and camera setup; content for social media |
+| **PC workstation** | Recording interface, monitors, mixing — same setup serves as home office |
+| **Playback system** | Studio monitors for mixing; need to accommodate in room layout |
+| **Live streaming** | Not required |
+| **Teaching** | Not required |
 
 ### Current Status
 - On hiatus for ~9 months due to lack of space
