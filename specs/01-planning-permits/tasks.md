@@ -38,6 +38,10 @@ Research Austin building codes, select the building site, and obtain all necessa
     - _Completed: 2026-01-24_
     - _Notes: Documented NEC requirements for detached building electrical (disconnect, subpanel, grounding), HVAC permit requirements, mini-split recommendation for sound isolation, and inspection sequence._
     - _Requirements: 1.5_
+  - [ ] 1.6 Research Cedar Park noise ordinance limits
+    - Document acceptable dB levels at property line (residential)
+    - Note any time-of-day restrictions
+    - _Requirements: 1.1_
 
 - [ ] 2. Select building site
   - [ ] 2.1 Survey backyard and identify candidate locations
