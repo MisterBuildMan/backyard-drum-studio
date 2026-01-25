@@ -4,17 +4,18 @@ High-level overview of project phases.
 
 ## Phases
 
-- [-] 0. Project Setup
-  - Establish documentation methodology
-  - Create templates and conventions
+- [x] 0. Goals & Brief
+  - Project motivation and intended use
+  - Technical targets (60 dB isolation)
+  - Timeline (end of 2026) and budget ($50k target, $70k cap)
 
-- [ ] 1. Planning & Permits
+- [-] 1. Planning & Permits
   - Site assessment
   - Local code research
   - Permit applications
   - Budget planning
 
-- [ ] 2. Design
+- [-] 2. Design
   - 3D modeling (SketchUp)
   - Floor plan and dimensions
   - Sound isolation strategy
