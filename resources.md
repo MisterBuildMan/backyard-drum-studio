@@ -12,6 +12,23 @@ External references and helpful links for this project.
 
 ---
 
+## Soundman2020 Studio Building Guide
+
+Essential reading from the John Sayers forum — a comprehensive 10-step guide for DIY studio construction:
+
+- [Step 1: Decide on a Goal](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24441) - Define what you want to achieve
+- [Step 2: Make a Checklist](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24442) - 10 consideration areas (isolation, dimensions, layout, geometry, HVAC, acoustic testing, acoustic treatment, electrical, lighting, decoration)
+- [Step 3: Decide on a Budget](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24443) - Budget planning and reality checks
+- [Step 4: Decide on a Location](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24444) - Site selection considerations
+- [Step 5: Decide on a Size](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24445) - Room dimensions and ratios
+- [Step 6: Decide on a Shape](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24446) - Room geometry
+- [Step 7: Decide on a Shell](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24447) - Construction approach
+- [Step 8: Decide on Isolation](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24448) - Sound isolation strategy
+- [Step 9: Decide on Acoustics](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24449) - Room treatment
+- [Step 10: Decide on Finishing](https://www.johnlsayers.com/phpBB2/viewtopic.php?t=24450) - Final touches
+
+---
+
 ## Acoustic Design
 
 - [amroc Room Mode Calculator](https://amcoustics.com/tools/amroc) - Calculate room modes for any dimensions

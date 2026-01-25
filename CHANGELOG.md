@@ -20,6 +20,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
   - Primary: practice, recording, video content
   - Secondary: home office, mixing, leisure
   - Special: video recording setup needed, no streaming/teaching
+- **Completed:** Calculate Isolation Requirement (Task 3) - 2026-01-25
+  - Equipment: PM6708 Digital Sound Level Meter
+  - Background noise: 55-70+ dBC (preliminary, windy day)
+  - Calculation: 110 dBC (drums) - 55 dBC (background) = 55 dB required
+  - Design target: 60 dB with margin
+  - Video: `specs/00-goals-brief/media/background-noise-measurement-2026-01-25.mp4`
+- **Completed:** Establish Technical Targets (Task 4) - 2026-01-25
+  - Isolation: 55 dB required, 60 dB design target
+  - Room character: deferred to treatment phase
+  - No specific frequency response or reference standards
+- **Completed:** Document Timeline and Budget (Task 5) - 2026-01-25
+  - Target: end of 2026 (1 year)
+  - Budget: $50k target, $70k hard cap
+  - Priority: invest in isolation, economize with DIY labor
+- **Completed:** Organize Project Structure (Task 6) - 2026-01-25
+  - Mapped Soundman2020's 10 consideration areas to project specs
+  - Created placeholder specs for phases 05-09
+  - Added `geometry.md` and `lighting.md` to 02-design
+- **Completed:** Create Brief Document (Task 7) - 2026-01-25
+  - All sections populated in `specs/00-goals-brief/brief.md`
+- **Completed:** Update Project Documentation (Task 8) - 2026-01-25
+  - Added Soundman2020 guide links to `resources.md`
+  - Verified STC 55-60 target consistency across design docs
 
 ### Planning & Permits
 - **Completed:** Look up property zoning district (Task 1.1) - 2026-01-20

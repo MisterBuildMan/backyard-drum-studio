@@ -131,37 +131,59 @@ Drums drive all design decisions. Secondary uses must fit around the primary pur
 
 ## 4. Timeline & Budget
 
-*[To be completed in Task 5]*
-
 ### Target Completion
-- TBD
+- **End of 2026** — Full completion target (1 year from project start)
+- Studio may be usable before full completion (e.g., defer exterior cladding, move kit in early)
 
 ### Budget Estimate
-- TBD
+- **Target:** $50,000
+- **Hard cap:** $70,000
+- Acknowledging costs typically exceed initial estimates
 
 ### Constraints
-- TBD
+- No hard timeline constraints
+- Budget ceiling: $70,000 absolute maximum
 
 ### Priorities
-- TBD
+
+| Priority | Approach |
+|----------|----------|
+| **Invest in** | Isolation — this is the primary requirement |
+| **Economize on** | DIY labor where feasible (framing, etc.) |
+| **Flexible** | Finishes, exterior cladding (can defer if needed) |
 
 ---
 
 ## 5. Master Checklist
 
-*[To be completed in Task 6]*
+Soundman2020's 10 consideration areas mapped to project specs:
 
-Initial notes on each consideration area:
+| Area | Coverage | Spec Location |
+|------|----------|---------------|
+| **Isolation** | ✓ | `02-design/wall-assembly.md`, `02-design/decoupling-strategy.md`, `02-design/doors-windows.md` |
+| **Dimensions** | ✓ | `02-design/structure-dimensions.md`, `02-design/room-proportions.md` |
+| **Layout** | ✓ | `02-design/design.md` |
+| **Geometry** | ✓ | `02-design/geometry.md` |
+| **HVAC** | ✓ | `02-design/hvac.md` |
+| **Acoustic Testing** | ✓ | `08-acoustic-treatment/` (pre-treatment testing) |
+| **Acoustic Treatment** | ✓ | `08-acoustic-treatment/` |
+| **Electrical** | ✓ | `02-design/electrical.md`, `06-systems/` |
+| **Lighting** | ✓ | `02-design/lighting.md` |
+| **Decoration** | ✓ | `07-interior/` (finishes), `09-final-setup/` (furniture/equipment) |
 
-| Area | Status | Notes |
-|------|--------|-------|
-| Isolation | TBD | Primary requirement — must not disturb family or neighbors |
-| Dimensions | TBD | Must fit drum kit + recording position + secondary office use |
-| Layout | TBD | |
-| Geometry | TBD | |
-| HVAC | Required | Texas climate demands climate control |
-| Acoustic Testing | TBD | |
-| Acoustic Treatment | TBD | |
-| Electrical | TBD | |
-| Lighting | TBD | |
-| Decoration | TBD | |
+### Phase Coverage Summary
+
+| Phase | Spec | Status |
+|-------|------|--------|
+| 0. Goals & Brief | `00-goals-brief/` | In progress |
+| 1. Planning & Permits | `01-planning-permits/` | Placeholder |
+| 2. Design | `02-design/` | Detailed |
+| 3. Foundation | `03-foundation/` | Placeholder |
+| 4. Structure | `04-structure/` | Placeholder |
+| 5. Exterior | `05-exterior/` | Placeholder |
+| 6. Systems | `06-systems/` | Placeholder |
+| 7. Interior Finish | `07-interior/` | Placeholder |
+| 8. Acoustic Treatment | `08-acoustic-treatment/` | Placeholder |
+| 9. Final Setup | `09-final-setup/` | Placeholder |
+
+All 10 Soundman2020 consideration areas have a home in the project structure.

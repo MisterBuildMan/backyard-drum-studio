@@ -27,9 +27,9 @@ High-level overview of project phases.
   - Concrete slab pour
   - Curing
 
-- [ ] 4. Framing
-  - Wall framing (likely double-stud for sound isolation)
-  - Roof framing
+- [ ] 4. Structure
+  - Outer shell construction (CMU, wood frame, or hybrid — TBD)
+  - Roof structure
   - Door and window rough openings
 
 - [ ] 5. Exterior
