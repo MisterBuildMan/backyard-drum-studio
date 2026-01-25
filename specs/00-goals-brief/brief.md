@@ -121,10 +121,11 @@ Drums drive all design decisions. Secondary uses must fit around the primary pur
 - Safety factor for low-frequency transmission
 
 ### Room Acoustic Character
-- TBD — To be defined in Task 4
+- To be determined with acoustic treatment after construction
+- Priority is isolation; room character will be tuned later with bass traps, absorption, and diffusion as needed
 
 ### Reference Standards
-- TBD
+- N/A — home studio, not targeting professional control room standards
 
 ---
 

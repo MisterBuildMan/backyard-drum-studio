@@ -38,11 +38,19 @@ This phase produces the project brief document that captures motivation, intende
     _Completed: 2026-01-25_
     _Notes: Updated brief.md Technical Targets section with isolation calculation and measurement details._
 
-- [ ] 4. Establish Technical Targets
-  - [ ] 4.1 Document isolation target in dB (from Task 3)
-  - [ ] 4.2 Define desired room acoustic character (RT60 target or subjective description)
-  - [ ] 4.3 Note any frequency response goals (if applicable)
-  - [ ] 4.4 Note any reference standards being targeted (if applicable)
+- [x] 4. Establish Technical Targets
+  - [x] 4.1 Document isolation target in dB (from Task 3)
+    _Completed: 2026-01-25_
+    _Notes: 55 dB required (preliminary), 60 dB design target with margin._
+  - [x] 4.2 Define desired room acoustic character (RT60 target or subjective description)
+    _Completed: 2026-01-25_
+    _Notes: Deferred — will tune with treatment after construction. Isolation is priority._
+  - [x] 4.3 Note any frequency response goals (if applicable)
+    _Completed: 2026-01-25_
+    _Notes: N/A — no specific goals at this time._
+  - [x] 4.4 Note any reference standards being targeted (if applicable)
+    _Completed: 2026-01-25_
+    _Notes: N/A — home studio, not targeting professional control room standards._
 
 - [ ] 5. Document Timeline and Budget
   - [ ] 5.1 Set target completion date (or date range)
