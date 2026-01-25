@@ -20,6 +20,7 @@ space-cabin-studios/
 ├── CHANGELOG.md                 # Progress log
 ├── master-plan.md               # High-level phase tracking
 ├── glossary.md                  # Construction terminology
+├── resources.md                 # External references and links
 │
 ├── specs/                       # Phase specifications
 │   ├── 00-project-setup/        # Meta: how this project works
