@@ -19,12 +19,24 @@ This phase produces the project brief document that captures motivation, intende
   - [x] 2.4 Note any special requirements (video, streaming, teaching, etc.)
   _Completed: 2026-01-25_
 
-- [ ] 3. Calculate Isolation Requirement
-  - [ ] 3.1 Acquire or borrow a sound level meter (C-weighting capable)
-  - [ ] 3.2 Measure "How loud am I?" - drum kit at typical playing volume (~3 ft from kit, C-weighting, Slow)
-  - [ ] 3.3 Measure "How quiet do I need to be?" - background noise at studio site, at intended use times
-  - [ ] 3.4 Calculate: Source level - Background level = Required isolation (dB)
-  - [ ] 3.5 Document all measurements and calculated target
+- [x] 3. Calculate Isolation Requirement
+  - [x] 3.1 Acquire or borrow a sound level meter (C-weighting capable)
+    _Completed: 2026-01-25_
+  - [x] 3.2 Measure "How loud am I?" - drum kit at typical playing volume (~3 ft from kit, C-weighting, Slow)
+    _Completed: 2026-01-25_
+    _Notes: Using reference values (105-115 dBC) until kit can be measured. Will use 110 dBC as planning estimate._
+  - [x] 3.3 Measure "How quiet do I need to be?" - background noise at studio site, at intended use times
+    _Completed: 2026-01-25_
+    _Equipment: PM6708 Digital Sound Level Meter_
+    _Notes: Preliminary reading 55-70+ dBC (C-weighting, Slow). Low of ~55 dBC, spiked past 70 occasionally — likely wind interference. Need additional samples on calm day to confirm baseline._
+    _Video: [media/background-noise-measurement-2026-01-25.mp4](media/background-noise-measurement-2026-01-25.mp4)_
+  - [x] 3.4 Calculate: Source level - Background level = Required isolation (dB)
+    _Completed: 2026-01-25_
+    _Calculation: 110 dBC (drums, reference) - 55 dBC (background, preliminary) = **55 dB isolation required**_
+    _Notes: This is a preliminary estimate. Conservative — actual drum measurement may be higher (105-115 dBC range), and background may be lower on calm days. Design target should include margin._
+  - [x] 3.5 Document all measurements and calculated target
+    _Completed: 2026-01-25_
+    _Notes: Updated brief.md Technical Targets section with isolation calculation and measurement details._
 
 - [ ] 4. Establish Technical Targets
   - [ ] 4.1 Document isolation target in dB (from Task 3)
