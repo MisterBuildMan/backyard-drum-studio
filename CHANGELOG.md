@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
 
 ## [Unreleased]
 
+### Goals & Brief
+- **Completed:** Write Project Motivation (Task 1) - 2026-01-25
+  - Created `specs/00-goals-brief/brief.md` with motivation section
+  - Documented: lifelong drummer, need for dedicated practice/recording space
+  - Key drivers: eliminate rental costs/travel, immediate home access, gear security
+  - Primary use: acoustic drum practice (3-4x/week) and recording
+  - Secondary use: home office space
+
 ### Planning & Permits
 - **Completed:** Look up property zoning district (Task 1.1) - 2026-01-20
   - Identified SR (Suburban Residential) zoning

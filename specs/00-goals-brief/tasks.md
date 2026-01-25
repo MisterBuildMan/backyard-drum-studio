@@ -6,10 +6,11 @@ This phase produces the project brief document that captures motivation, intende
 
 ## Tasks
 
-- [ ] 1. Write Project Motivation
-  - [ ] 1.1 Answer: "Why do you want to build this studio?"
-  - [ ] 1.2 Answer: "What motivated the decision to make your own place?"
-  - [ ] 1.3 Answer: "Why is building better than alternatives?" (renting studio time, practice pads, converting existing room, etc.)
+- [x] 1. Write Project Motivation
+  - [x] 1.1 Answer: "Why do you want to build this studio?"
+  - [x] 1.2 Answer: "What motivated the decision to make your own place?"
+  - [x] 1.3 Answer: "Why is building better than alternatives?" (renting studio time, practice pads, converting existing room, etc.)
+  _Completed: 2026-01-25_
 
 - [ ] 2. Document Intended Use
   - [ ] 2.1 Describe a typical session in detail (instruments, people, activities)
