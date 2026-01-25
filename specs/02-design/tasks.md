@@ -4,6 +4,20 @@
 
 Complete all design decisions, create construction drawings, and establish budget before proceeding to construction phases.
 
+## Design Documents
+
+| Document | Tasks |
+|----------|-------|
+| [room-proportions.md](room-proportions.md) | 1.1, 1.5 |
+| [structure-dimensions.md](structure-dimensions.md) | 1.2, 1.3, 1.4, 1.5, 1.6 |
+| [wall-assembly.md](wall-assembly.md) | 2.1-2.5, 3.1-3.4 |
+| [foundation.md](foundation.md) | 4.1-4.4 |
+| [ceiling-roof.md](ceiling-roof.md) | 5.1-5.4 |
+| [doors-windows.md](doors-windows.md) | 6.1-6.5 |
+| [hvac.md](hvac.md) | 7.1-7.5 |
+| [electrical.md](electrical.md) | 8.1-8.5 |
+| [decoupling-strategy.md](decoupling-strategy.md) | 9.1-9.5 |
+
 ## Tasks
 
 - [-] 1. Determine structure dimensions
