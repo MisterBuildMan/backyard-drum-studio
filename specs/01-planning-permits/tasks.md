@@ -38,10 +38,23 @@ Research Austin building codes, select the building site, and obtain all necessa
     - _Completed: 2026-01-24_
     - _Notes: Documented NEC requirements for detached building electrical (disconnect, subpanel, grounding), HVAC permit requirements, mini-split recommendation for sound isolation, and inspection sequence._
     - _Requirements: 1.5_
-  - [ ] 1.6 Research Cedar Park noise ordinance limits
+  - [x] 1.6 Research Cedar Park noise ordinance limits
     - Document acceptable dB levels at property line (residential)
     - Note any time-of-day restrictions
     - _Requirements: 1.1_
+    - _Completed: 2026-01-25_
+    - _Notes:_
+      - **Code Reference:** Cedar Park Code of Ordinances § 8.08.003
+      - **Residential Property Limits (measured at YOUR property line):**
+        - **Daytime (7 AM - 10 PM):** 70 dB(A) or 80 dB(C)
+        - **Nighttime (10 PM - 7 AM):** 50 dB(A) or 60 dB(C)
+      - **Measurement Location:** At the real property line of the noise source, closest to both complainant and noise origin. If sound mitigation exists (wall, landscaping), also measured from unprotected location - higher reading is determinative.
+      - **Implications for studio:** 
+        - Nighttime 50 dB(A) limit is strict - drums at ~110 dB(A) need 60 dB reduction to comply
+        - STC 55-60 target should achieve ~50-55 dB at exterior wall
+        - Additional distance attenuation to property line provides margin
+        - dB(C) limit (60 dB nighttime) is relevant for low-frequency drum energy
+      - **Source:** ecode360.com/38611305 (Ordinance CO26-17-03-09-H4)
 
 - [ ] 2. Select building site
   - [ ] 2.1 Survey backyard and identify candidate locations

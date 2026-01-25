@@ -57,6 +57,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
   - Found 20% back yard coverage limit for accessory buildings (§ 11.04.001(F))
   - Back yard: ~6,600 sq ft → 1,320 sq ft max for accessory buildings
   - Detached garage uses 400 sq ft → 920 sq ft available for studio
+- **Completed:** Research Cedar Park noise ordinance limits (Task 1.6) - 2026-01-25
+  - Code: § 8.08.003, measured at property line of noise source
+  - Residential daytime (7 AM - 10 PM): 70 dB(A) / 80 dB(C)
+  - Residential nighttime (10 PM - 7 AM): 50 dB(A) / 60 dB(C)
+  - Nighttime limit is strict - validates need for STC 55-60 target
 
 ### Project Setup
 - Initialized repository structure
