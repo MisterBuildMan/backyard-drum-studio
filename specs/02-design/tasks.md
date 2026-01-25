@@ -10,7 +10,8 @@ Complete all design decisions, create construction drawings, and establish budge
   - [x] 1.1 Research optimal room proportions for drum studios
     - Review acoustic ratio recommendations (Bolt, Louden, Bonello)
     - _Requirements: 1.3_
-  - [ ] 1.2 Create preliminary SketchUp sketches
+  - [-] 1.2 Create preliminary SketchUp sketches
+    - _Started: 2026-01-24_
     - [ ] 1.2.1 Interior floor plan with ceiling height options (9, 10, 11 ft)
     - [ ] 1.2.2 Site placement sketch showing studio location in backyard
     - _Requirements: 1.1, 1.3_
@@ -24,8 +25,9 @@ Complete all design decisions, create construction drawings, and establish budge
   - [ ] 1.6 Document final dimensions in design.md
     - _Requirements: 1.5_
 
-- [ ] 2. Select wall assembly system
-  - [ ] 2.1 Research wall assembly options and STC ratings
+- [-] 2. Select wall assembly system
+  - [-] 2.1 Research wall assembly options and STC ratings
+    - _Started: 2026-01-24_
     - Standard framing, double-stud, staggered-stud, CMU
     - _Requirements: 2.1_
   - [ ] 2.2 Get material cost estimates for each option
