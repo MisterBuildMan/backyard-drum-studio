@@ -10,14 +10,18 @@ Complete all design decisions, create construction drawings, and establish budge
   - [x] 1.1 Research optimal room proportions for drum studios
     - Review acoustic ratio recommendations (Bolt, Louden, Bonello)
     - _Requirements: 1.3_
-  - [ ] 1.2 Calculate exterior dimensions within constraints
+  - [ ] 1.2 Create preliminary SketchUp sketches
+    - [ ] 1.2.1 Interior floor plan with ceiling height options (9, 10, 11 ft)
+    - [ ] 1.2.2 Site placement sketch showing studio location in backyard
+    - _Requirements: 1.1, 1.3_
+  - [ ] 1.3 Calculate exterior dimensions within constraints
     - Must fit 920 sq ft limit and setbacks
     - _Requirements: 1.1_
-  - [ ] 1.3 Calculate interior dimensions based on wall assembly thickness
-    - _Requirements: 1.2, 1.5_
-  - [ ] 1.4 Verify minimum 120 sq ft interior and good proportions
-    - _Requirements: 1.2, 1.3_
-  - [ ] 1.5 Document final dimensions in design.md
+  - [ ] 1.4 Calculate interior dimensions based on wall assembly thickness
+    - _Requirements: 1.3, 1.5_
+  - [ ] 1.5 Verify minimum 120 sq ft interior and good proportions
+    - _Requirements: 1.3, 1.4_
+  - [ ] 1.6 Document final dimensions in design.md
     - _Requirements: 1.5_
 
 - [ ] 2. Select wall assembly system
