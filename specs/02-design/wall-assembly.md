@@ -46,15 +46,82 @@ Where:
 2. **Increase cavity depth** (wider air gap = lower resonance)
 3. **Add insulation** in cavity (dampens the spring effect, doesn't change resonance but reduces the peak)
 
+### Material Surface Mass Reference
+
+| Material | Thickness | lbs/ft² | kg/m² | Source |
+|----------|-----------|---------|-------|--------|
+| **Drywall** |||||
+| Drywall (standard) | 5/8" (15.9mm) | 2.2 | 10.7 | [1] |
+| Drywall (standard) | 1/2" (12.7mm) | 1.8 | 8.8 | [1] |
+| **Sheathing** |||||
+| OSB sheathing | 1/2" (12.7mm) | 1.7 | 8.3 | [1] |
+| Plywood | 1/2" (12.7mm) | 1.5 | 7.3 | [1] |
+| **CMU (Concrete Masonry Unit)** |||||
+| CMU ungrouted (normal weight 135 pcf) | 8" (203mm) | 42 | 205 | [3] |
+| CMU grouted @ 48" o.c. (normal weight) | 8" (203mm) | 47 | 229 | [3] |
+| CMU grouted @ 24" o.c. (normal weight) | 8" (203mm) | 55 | 269 | [3] |
+| CMU grouted @ 16" o.c. (normal weight) | 8" (203mm) | 63 | 308 | [3] |
+| CMU solid grouted (normal weight) | 8" (203mm) | 86 | 420 | [3] |
+| CMU ungrouted (lightweight 105 pcf) | 8" (203mm) | 34 | 166 | [3] |
+| CMU solid grouted (lightweight) | 8" (203mm) | 78 | 381 | [3] |
+| **Brick** |||||
+| Standard red brick (single wythe) | 3-5/8" (92mm) | 35-40 | 171-195 | [4][5] |
+| King size brick (single wythe) | 4-1/2" (114mm) | 40-45 | 195-220 | [4] |
+| Utility brick (single wythe) | 3-5/8" (92mm) | 50-55 | 244-269 | [4] |
+| Norman brick (single wythe) | 2-1/4" (57mm) | 35 | 171 | [4] |
+| Double wythe brick wall | 8" (203mm) | 70-80 | 342-390 | est. |
+| Thin brick veneer | 3/8" (10mm) | 5-6 | 24-29 | [4] |
+
+[1] [Soundproofing Company - Building Materials Weights Guide](https://www.soundproofingcompany.com/soundproofing_101/building-materials-weights-guide)
+[2] [Angelus Block - Wall Weights and Areas](https://www.angelusblock.com/resources/technical_articles/wall-weights-and-areas/)
+[3] [NCMA TEK 14-13B - Concrete Masonry Wall Weights](https://media.enercalc.com/sel_help_20/appendix_c.htm) (via Enercalc, using 140 pcf grout)
+[4] [Real Thin Brick - How Much Does a Brick Weigh](https://www.realthinbrick.com/post/how-much-does-a-brick-weigh)
+[5] [Architect Wisdom - Typical Weights of Materials](https://architectwisdom.com/typical-weights-of-materials/)
+
 ### Resonance by Assembly Type
 
-| Assembly | Approx. Mass (kg/m²) | Cavity | Est. Resonance |
-|----------|---------------------|--------|----------------|
-| Double-stud wood (2× 5/8" drywall each side) | ~25 + ~25 | 1-2" | ~50-70 Hz |
-| CMU + stud/drywall | ~200 + ~25 | 1-4" | ~20-35 Hz ★ |
-| Double CMU | ~200 + ~200 | 2-4" | ~15-25 Hz ★★ |
+Using simplified formula: `f₀ ≈ 60 / √(m_eff × d)` where m_eff = (m₁ × m₂) / (m₁ + m₂)
 
-The CMU options push resonance well below kick drum range, which is why masonry outer shells are preferred for drum rooms despite the added complexity.
+#### 1. Double-stud wood (2× 5/8" drywall each leaf)
+| Leaf 1 | Leaf 2 | m_eff | Cavity | Est. Resonance |
+|--------|--------|-------|--------|----------------|
+| 4.4 lbs/ft² (21.4 kg/m²) | 4.4 lbs/ft² (21.4 kg/m²) | 2.2 lbs/ft² (10.7 kg/m²) | 1" (25mm) | ~116 Hz ⚠️ |
+| ″ | ″ | ″ | 2" (51mm) | ~81 Hz ⚠️ |
+| ″ | ″ | ″ | 4" (102mm) | ~57 Hz ⚠️ |
+| ″ | ″ | ″ | 8" (203mm) | ~41 Hz |
+
+#### 2. CMU solid grouted + stud/drywall inner
+| Leaf 1 | Leaf 2 | m_eff | Cavity | Est. Resonance |
+|--------|--------|-------|--------|----------------|
+| 86 lbs/ft² (420 kg/m²) | 4.4 lbs/ft² (21.4 kg/m²) | 4.2 lbs/ft² (20.4 kg/m²) | 1" (25mm) | ~84 Hz ⚠️ |
+| ″ | ″ | ″ | 2" (51mm) | ~59 Hz ⚠️ |
+| ″ | ″ | ″ | 4" (102mm) | ~42 Hz |
+| ″ | ″ | ″ | 6" (152mm) | ~34 Hz ★ |
+
+#### 3. Double CMU (solid grouted both leaves)
+| Leaf 1 | Leaf 2 | m_eff | Cavity | Est. Resonance |
+|--------|--------|-------|--------|----------------|
+| 86 lbs/ft² (420 kg/m²) | 86 lbs/ft² (420 kg/m²) | 43 lbs/ft² (210 kg/m²) | 2" (51mm) | ~18 Hz ★★ |
+| ″ | ″ | ″ | 4" (102mm) | ~13 Hz ★★ |
+
+#### 4. Brick (single wythe) + stud/drywall inner
+| Leaf 1 | Leaf 2 | m_eff | Cavity | Est. Resonance |
+|--------|--------|-------|--------|----------------|
+| 40 lbs/ft² (195 kg/m²) | 4.4 lbs/ft² (21.4 kg/m²) | 4.0 lbs/ft² (19.3 kg/m²) | 1" (25mm) | ~86 Hz ⚠️ |
+| ″ | ″ | ″ | 2" (51mm) | ~61 Hz ⚠️ |
+| ″ | ″ | ″ | 4" (102mm) | ~43 Hz |
+| ″ | ″ | ″ | 6" (152mm) | ~35 Hz ★ |
+
+#### 5. Double brick (single wythe each leaf)
+| Leaf 1 | Leaf 2 | m_eff | Cavity | Est. Resonance |
+|--------|--------|-------|--------|----------------|
+| 40 lbs/ft² (195 kg/m²) | 40 lbs/ft² (195 kg/m²) | 20 lbs/ft² (97.5 kg/m²) | 2" (51mm) | ~27 Hz ★ |
+| ″ | ″ | ″ | 4" (102mm) | ~19 Hz ★★ |
+
+⚠️ = Resonance in kick drum range (40-80 Hz) — problematic
+★ = Resonance below kick drum range — good for drums
+
+**Key insight:** Double-stud wood construction requires very large air gaps (8"+) to push resonance below kick drum frequencies. Masonry outer shells achieve this much more easily due to their mass advantage. The effective mass formula shows why: when one leaf is much heavier, m_eff approaches the lighter leaf's mass, but the heavy leaf still contributes by not moving as much at resonance.
 
 ---
 

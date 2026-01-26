@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Wall Transmission Loss Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .assembly {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .assembly label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .assembly-details {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+            padding-left: 24px;
+        }
+        .custom-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        .custom-section h3 {
+            margin-top: 0;
+            font-size: 14px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .legend-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .legend-info h4 {
+            margin: 0 0 10px 0;
+            font-size: 13px;
+        }
+        .freq-marker {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .formula-note {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff3cd;
+            border-radius: 4px;
+            font-size: 11px;
+            color: #856404;
+        }
+        .preset-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .preset-buttons button {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        .preset-buttons button:hover {
+            background: #e9e9e9;
+        }
+        @media (max-width: 800px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Double Wall Transmission Loss Calculator</h1>
+    <p class="subtitle">Based on London/Sharp mass-air-mass formulas</p>
+    
+    <div class="container">
+        <div class="controls">
+            <h3>Wall Assemblies</h3>
+
+            <div class="assembly">
+                <label>
+                    <input type="checkbox" id="assembly1" checked onchange="updateChart()">
+                    1. Double-stud wood
+                </label>
+                <div class="assembly-details">2×5/8" drywall each leaf (21.4 kg/m²)<br>4" cavity</div>
+            </div>
+            
+            <div class="assembly">
+                <label>
+                    <input type="checkbox" id="assembly2" checked onchange="updateChart()">
+                    2. CMU + stud/drywall
+                </label>
+                <div class="assembly-details">CMU solid grouted (420 kg/m²) + 2×5/8" drywall (21.4 kg/m²)<br>4" cavity</div>
+            </div>
+            
+            <div class="assembly">
+                <label>
+                    <input type="checkbox" id="assembly3" checked onchange="updateChart()">
+                    3. Double CMU
+                </label>
+                <div class="assembly-details">CMU solid grouted both leaves (420 kg/m² each)<br>4" cavity</div>
+            </div>
+            
+            <div class="assembly">
+                <label>
+                    <input type="checkbox" id="assembly4" checked onchange="updateChart()">
+                    4. Brick + stud/drywall
+                </label>
+                <div class="assembly-details">Single wythe brick (195 kg/m²) + 2×5/8" drywall (21.4 kg/m²)<br>4" cavity</div>
+            </div>
+            
+            <div class="assembly">
+                <label>
+                    <input type="checkbox" id="assembly5" checked onchange="updateChart()">
+                    5. Double brick
+                </label>
+                <div class="assembly-details">Single wythe brick both leaves (195 kg/m² each)<br>4" cavity</div>
+            </div>
+
+            <div class="custom-section">
+                <h3>Custom Assembly</h3>
+                <div class="input-group">
+                    <label>Leaf 1 mass (kg/m²)</label>
+                    <input type="number" id="customM1" value="21.4" onchange="updateChart()">
+                </div>
+                <div class="input-group">
+                    <label>Leaf 2 mass (kg/m²)</label>
+                    <input type="number" id="customM2" value="21.4" onchange="updateChart()">
+                </div>
+                <div class="input-group">
+                    <label>Cavity depth (inches)</label>
+                    <input type="number" id="customCavity" value="4" step="0.5" onchange="updateChart()">
+                </div>
+                <label style="font-size: 12px; display: flex; align-items: center; gap: 5px; margin-top: 10px;">
+                    <input type="checkbox" id="showCustom" onchange="updateChart()">
+                    Show custom assembly
+                </label>
+            </div>
+
+            <div class="custom-section">
+                <h3>Frequency Range</h3>
+                <div class="preset-buttons">
+                    <button onclick="setFreqRange(20, 10000)">Full (20-10k)</button>
+                    <button onclick="setFreqRange(20, 1000)">Low (20-1k)</button>
+                    <button onclick="setFreqRange(30, 100)">Kick Drum</button>
+                    <button onclick="setFreqRange(100, 500)">Snare/Toms</button>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div class="input-group" style="flex: 1;">
+                        <label>Min Hz</label>
+                        <input type="number" id="freqMin" value="20" onchange="updateChart()">
+                    </div>
+                    <div class="input-group" style="flex: 1;">
+                        <label>Max Hz</label>
+                        <input type="number" id="freqMax" value="10000" onchange="updateChart()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="legend-info">
+                <h4>Key Frequencies</h4>
+                <div class="freq-marker"><span>Kick drum fundamental:</span><span>40-80 Hz</span></div>
+                <div class="freq-marker"><span>Snare fundamental:</span><span>150-250 Hz</span></div>
+                <div class="freq-marker"><span>Hi-hat:</span><span>300-3000 Hz</span></div>
+                <div class="freq-marker"><span>Cymbals:</span><span>3000-15000 Hz</span></div>
+            </div>
+
+            <div class="formula-note">
+                <strong>Note:</strong> This uses simplified London/Sharp formulas. Real-world performance depends on construction quality, flanking paths, and material properties not captured here.
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="tlChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+
+        // Predefined assemblies [m1 (kg/m²), m2 (kg/m²), cavity (m), name, color]
+        const assemblies = {
+            assembly1: { m1: 21.4, m2: 21.4, d: 0.1016, name: '1. Double-stud wood', color: '#e74c3c' },
+            assembly2: { m1: 420, m2: 21.4, d: 0.1016, name: '2. CMU + stud/drywall', color: '#3498db' },
+            assembly3: { m1: 420, m2: 420, d: 0.1016, name: '3. Double CMU', color: '#2ecc71' },
+            assembly4: { m1: 195, m2: 21.4, d: 0.1016, name: '4. Brick + stud/drywall', color: '#9b59b6' },
+            assembly5: { m1: 195, m2: 195, d: 0.1016, name: '5. Double brick', color: '#f39c12' }
+        };
+
+        // Constants
+        const rho0 = 1.21;  // Air density kg/m³
+        const c0 = 343;     // Speed of sound m/s
+
+        // Calculate resonance frequency
+        function calcResonance(m1, m2, d) {
+            const mEff = (m1 * m2) / (m1 + m2);
+            return 60 / Math.sqrt(mEff * d);
+        }
+
+        // Estimate critical frequency for a panel
+        // fc ≈ c² / (1.8 × h × cL) where cL is longitudinal wave speed
+        // Simplified: for drywall ~2500 Hz for 12.7mm, scales inversely with thickness
+        function calcCriticalFreq(m, thickness_mm) {
+            // Rough estimate based on typical materials
+            if (m > 300) return 100;  // Heavy masonry - very low fc
+            if (m > 150) return 150;  // Brick
+            // Drywall: fc ≈ 3000 / thickness_mm approximately
+            return 3000 / (thickness_mm || 12.7);
+        }
+
+        // Calculate single wall TL with critical frequency effect
+        function calcSingleTL(f, m, fc) {
+            // Basic mass law
+            let TL = 20 * Math.log10(f * m) - 47;
+            
+            // Critical frequency dip (coincidence effect)
+            if (fc && f > fc * 0.5 && f < fc * 2) {
+                const ratio = f / fc;
+                // Dip of ~10-15 dB at critical frequency
+                const dip = 12 * Math.exp(-Math.pow((Math.log(ratio)) * 3, 2));
+                TL = TL - dip;
+            }
+            
+            return Math.max(TL, 0);
+        }
+
+        // Calculate double wall TL using improved London/Sharp model
+        function calcDoubleTL(f, m1, m2, d) {
+            const f0 = calcResonance(m1, m2, d);
+            const fLimit = 55 / d;  // Limit frequency where cavity modes dominate
+            
+            // Estimate critical frequencies
+            const fc1 = calcCriticalFreq(m1, m1 > 100 ? 200 : 15.9);
+            const fc2 = calcCriticalFreq(m2, m2 > 100 ? 200 : 15.9);
+            
+            // Single wall TLs
+            const TL1 = calcSingleTL(f, m1, fc1);
+            const TL2 = calcSingleTL(f, m2, fc2);
+            
+            let TL;
+            
+            if (f < f0 * 0.7) {
+                // Well below resonance - mass law with combined mass
+                TL = 20 * Math.log10(f * (m1 + m2)) - 47;
+            } else if (f < f0 * 1.4) {
+                // Near resonance - significant dip
+                const combinedTL = 20 * Math.log10(f * (m1 + m2)) - 47;
+                const ratio = f / f0;
+                // Sharp dip at resonance, can lose 10-20 dB
+                const dipMagnitude = 15;
+                const dip = dipMagnitude * Math.exp(-Math.pow((ratio - 1) * 5, 2));
+                TL = combinedTL - dip;
+            } else if (f < fLimit) {
+                // Above resonance, below limit - 18 dB/octave improvement
+                // TL = TL1 + TL2 + 20*log(f*d) - 29
+                TL = TL1 + TL2 + 20 * Math.log10(f * d) - 29;
+            } else {
+                // Above limit frequency - cavity modes limit improvement
+                // Improvement slows to ~12 dB/octave, then levels off
+                const TL_at_limit = TL1 + TL2 + 20 * Math.log10(fLimit * d) - 29;
+                const octaves_above = Math.log2(f / fLimit);
+                TL = TL_at_limit + 6 * octaves_above;  // Slower improvement
+                
+                // Cap at practical maximum
+                TL = Math.min(TL, TL1 + TL2 + 10);
+            }
+            
+            return Math.max(TL, 0);
+        }
+
+        // Generate frequency points (logarithmic scale)
+        function generateFrequencies() {
+            const minFreq = parseFloat(document.getElementById('freqMin').value) || 20;
+            const maxFreq = parseFloat(document.getElementById('freqMax').value) || 10000;
+            const freqs = [];
+            for (let f = minFreq; f <= maxFreq; f *= 1.03) {
+                freqs.push(Math.round(f * 10) / 10);
+            }
+            return freqs;
+        }
+
+        // Set frequency range and update
+        function setFreqRange(min, max) {
+            document.getElementById('freqMin').value = min;
+            document.getElementById('freqMax').value = max;
+            updateChart();
+        }
+
+        // Calculate TL data for an assembly
+        function calcAssemblyData(m1, m2, d) {
+            const freqs = generateFrequencies();
+            return freqs.map(f => ({
+                x: f,
+                y: calcDoubleTL(f, m1, m2, d)
+            }));
+        }
+
+        // Chart instance
+        let chart = null;
+
+        function updateChart() {
+            const datasets = [];
+            
+            // Add predefined assemblies
+            for (const [id, assembly] of Object.entries(assemblies)) {
+                if (document.getElementById(id).checked) {
+                    datasets.push({
+                        label: assembly.name,
+                        data: calcAssemblyData(assembly.m1, assembly.m2, assembly.d),
+                        borderColor: assembly.color,
+                        backgroundColor: assembly.color + '20',
+                        borderWidth: 2,
+                        pointRadius: 0,
+                        tension: 0.3
+                    });
+                }
+            }
+            
+            // Add custom assembly if enabled
+            if (document.getElementById('showCustom').checked) {
+                const m1 = parseFloat(document.getElementById('customM1').value) || 21.4;
+                const m2 = parseFloat(document.getElementById('customM2').value) || 21.4;
+                const cavityInches = parseFloat(document.getElementById('customCavity').value) || 4;
+                const d = cavityInches * 0.0254; // Convert inches to meters
+                
+                datasets.push({
+                    label: 'Custom Assembly',
+                    data: calcAssemblyData(m1, m2, d),
+                    borderColor: '#000000',
+                    backgroundColor: '#00000020',
+                    borderWidth: 3,
+                    borderDash: [5, 5],
+                    pointRadius: 0,
+                    tension: 0.3
+                });
+            }
+
+            if (chart) {
+                chart.destroy();
+                chart = null;
+            }
+            
+            const ctx = document.getElementById('tlChart').getContext('2d');
+            chart = new Chart(ctx, {
+                    type: 'line',
+                    data: { datasets },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        aspectRatio: 1.5,
+                        scales: {
+                            x: {
+                                type: 'logarithmic',
+                                title: {
+                                    display: true,
+                                    text: 'Frequency (Hz)'
+                                },
+                                min: parseFloat(document.getElementById('freqMin').value) || 20,
+                                max: parseFloat(document.getElementById('freqMax').value) || 10000,
+                                ticks: {
+                                    callback: function(value) {
+                                        const vals = [20, 30, 40, 50, 60, 80, 100, 125, 250, 500, 1000, 2000, 5000, 10000];
+                                        if (vals.includes(value)) return value;
+                                        return '';
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Transmission Loss (dB)'
+                                },
+                                min: 0,
+                                max: 120
+                            }
+                        },
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Double Wall Transmission Loss vs Frequency',
+                                font: { size: 16 }
+                            },
+                            legend: {
+                                position: 'bottom'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return `${context.dataset.label}: ${context.parsed.y.toFixed(1)} dB at ${context.parsed.x} Hz`;
+                                    }
+                                }
+                            },
+                            annotation: {
+                                annotations: {
+                                    kickDrum: {
+                                        type: 'box',
+                                        xMin: 40,
+                                        xMax: 80,
+                                        backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                                        borderColor: 'rgba(255, 99, 132, 0.3)',
+                                        borderWidth: 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+        }
+
+        // Initialize chart on load
+        updateChart();
+    </script>
+</body>
+</html>
