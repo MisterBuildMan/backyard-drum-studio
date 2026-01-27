@@ -63,6 +63,36 @@ The mass advantage of masonry is substantial, but double-wall decoupling provide
 
 ---
 
+## Cavity Insulation
+
+Adding fibrous insulation (fiberglass or mineral wool) to the air cavity between wall leaves is standard practice, but its acoustic benefits are often overstated.
+
+**What cavity insulation does:**
+1. **Absorbs mid/high frequency sound** passing through the air cavity (~200-1000 Hz sees the largest gains, up to 8 dB)
+2. **Slightly lowers resonance frequency** — changes air compression from adiabatic (γ=1.4) to isothermal (γ=1.0), shifting resonance down by ~1/3 octave
+3. **Provides thermal insulation** — R-13 per stud bay adds up
+
+**What cavity insulation does NOT do:**
+- **Does not improve low-frequency isolation** — at kick drum frequencies (40-80 Hz), gains are essentially zero
+- **Does not significantly affect STC** — lab tests show only 2-4 STC point improvement (empty vs. filled cavity)
+- **Does not block structural vibration** — insulation only absorbs airborne sound in the cavity, not vibration through studs/framing
+
+**Why it doesn't help at low frequencies:**
+Fibrous materials can't absorb long wavelengths. At 40 Hz, the wavelength is ~28 feet — a 3.5" layer of mineral wool is acoustically invisible at that scale. The structural paths through framing dominate at low frequencies regardless of cavity treatment.
+
+**Insulation type doesn't matter much:**
+Johns Manville (manufacturer of both) states: "For both sound transmission and sound absorption, mineral wool and fiberglass are nearly identical. The tiny differences are undetectable to the human ear." Lab tests confirm this — the difference between fiberglass and mineral wool is typically 1-2 STC points, within measurement error.
+
+**Practical recommendation:**
+Use standard R-13 fiberglass batts — they're cheaper than mineral wool and perform identically for sound isolation. Completely filling the cavity provides minimal benefit over partial fill. The insulation is mandatory for thermal performance and mid-frequency absorption, but won't rescue a wall assembly that's inadequate at low frequencies.
+
+**Sources:**
+- [TM Soundproofing - Effect of Insulation in Walls](https://www.tmsoundproofing.com/effect-of-insulation-in-the-common-wall.html) — NRC Canada lab data
+- [Soundproofing Company - Insulation Recommendations](https://www.soundproofingcompany.com/ask-ted/what-type-of-insulation-do-you-recommend)
+- [Impulsion Acoustique - Double Wall Resonance](https://app.impulsion-acoustique.fr/article-double-wall-resonance) — isothermal vs adiabatic compression
+
+---
+
 ## Candidate Approaches
 
 Three viable RWAR approaches for this project:
