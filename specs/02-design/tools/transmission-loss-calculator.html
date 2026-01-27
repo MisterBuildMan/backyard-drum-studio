@@ -142,42 +142,26 @@
 
             <div class="assembly">
                 <label>
-                    <input type="checkbox" id="assembly1" checked onchange="updateChart()">
-                    1. Double-stud wood
+                    <input type="checkbox" id="assemblyA" checked onchange="updateChart()">
+                    A. Double-Stud Wood Frame
                 </label>
-                <div class="assembly-details">2×5/8" drywall each leaf (21.4 kg/m²)<br>4" cavity</div>
+                <div class="assembly-details">2×5/8" drywall each leaf (21.4 kg/m² / 4.4 lbs/ft²)<br>8" cavity (2×4 studs + 1" gap + 2×4 studs)</div>
             </div>
             
             <div class="assembly">
                 <label>
-                    <input type="checkbox" id="assembly2" checked onchange="updateChart()">
-                    2. CMU + stud/drywall
+                    <input type="checkbox" id="assemblyB" checked onchange="updateChart()">
+                    B. CMU + Wood Inner Frame
                 </label>
-                <div class="assembly-details">CMU solid grouted (420 kg/m²) + 2×5/8" drywall (21.4 kg/m²)<br>4" cavity</div>
+                <div class="assembly-details">CMU solid grouted (420 kg/m² / 86 lbs/ft²) + 2×5/8" drywall (21.4 kg/m² / 4.4 lbs/ft²)<br>4" cavity</div>
             </div>
             
             <div class="assembly">
                 <label>
-                    <input type="checkbox" id="assembly3" checked onchange="updateChart()">
-                    3. Double CMU
+                    <input type="checkbox" id="assemblyC" checked onchange="updateChart()">
+                    C. Double Brick
                 </label>
-                <div class="assembly-details">CMU solid grouted both leaves (420 kg/m² each)<br>4" cavity</div>
-            </div>
-            
-            <div class="assembly">
-                <label>
-                    <input type="checkbox" id="assembly4" checked onchange="updateChart()">
-                    4. Brick + stud/drywall
-                </label>
-                <div class="assembly-details">Single wythe brick (195 kg/m²) + 2×5/8" drywall (21.4 kg/m²)<br>4" cavity</div>
-            </div>
-            
-            <div class="assembly">
-                <label>
-                    <input type="checkbox" id="assembly5" checked onchange="updateChart()">
-                    5. Double brick
-                </label>
-                <div class="assembly-details">Single wythe brick both leaves (195 kg/m² each)<br>4" cavity</div>
+                <div class="assembly-details">Single wythe brick both leaves (195 kg/m² / 40 lbs/ft² each)<br>4" cavity</div>
             </div>
 
             <div class="custom-section">
@@ -242,11 +226,9 @@
 
         // Predefined assemblies [m1 (kg/m²), m2 (kg/m²), cavity (m), name, color]
         const assemblies = {
-            assembly1: { m1: 21.4, m2: 21.4, d: 0.1016, name: '1. Double-stud wood', color: '#e74c3c' },
-            assembly2: { m1: 420, m2: 21.4, d: 0.1016, name: '2. CMU + stud/drywall', color: '#3498db' },
-            assembly3: { m1: 420, m2: 420, d: 0.1016, name: '3. Double CMU', color: '#2ecc71' },
-            assembly4: { m1: 195, m2: 21.4, d: 0.1016, name: '4. Brick + stud/drywall', color: '#9b59b6' },
-            assembly5: { m1: 195, m2: 195, d: 0.1016, name: '5. Double brick', color: '#f39c12' }
+            assemblyA: { m1: 21.4, m2: 21.4, d: 0.2032, name: 'A. Double-Stud Wood Frame', color: '#e74c3c' },
+            assemblyB: { m1: 420, m2: 21.4, d: 0.1016, name: 'B. CMU + Wood Inner Frame', color: '#3498db' },
+            assemblyC: { m1: 195, m2: 195, d: 0.1016, name: 'C. Double Brick', color: '#2ecc71' }
         };
 
         // Constants
