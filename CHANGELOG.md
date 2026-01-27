@@ -8,6 +8,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
 
 ## [Unreleased]
 
+### Design
+- **Completed:** Wall assembly cost estimates (Tasks 2.2, 3.1, 3.2) - 2026-01-26
+  - Added cost estimates section to `specs/02-design/wall-assembly.md`
+  - Based on 803 sq ft wall area (73 LF × 11 ft height)
+  - Approach A (Double-stud wood): $5,963 materials ($7.43/SF)
+  - Approach B (CMU + wood inner): $16,397 with labor ($20.42/SF)
+  - Approach C (Double brick): $32,490 with labor ($40.46/SF)
+  - Key finding: A saves $10-12K over B, $26-28K over C (masonry labor is expensive)
+
 ### Goals & Brief
 - **Completed:** Write Project Motivation (Task 1) - 2026-01-25
   - Created `specs/00-goals-brief/brief.md` with motivation section

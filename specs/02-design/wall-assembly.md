@@ -123,6 +123,8 @@ Three viable RWAR approaches for this project:
 | Wall thickness | ~11-12" |
 | Estimated STC | 55-63 |
 
+**Cost:** $7.43/SF (DIY) · $17.43/SF (Contracted) — [See detailed breakdown](#reference-cost-breakdown-approach-a)
+
 **Transmission Loss Graph:**
 ![Approach A TL Graph](images/tl-approach-a.png)
 
@@ -162,6 +164,9 @@ Three viable RWAR approaches for this project:
 | Estimated resonance | ~42 Hz |
 | Wall thickness | ~14" |
 | Estimated STC | 60-68 |
+
+**Cost:** $25.42/SF (Contracted) — [See detailed breakdown](#reference-cost-breakdown-approach-b)
+*CMU requires mason; inner wood frame can be DIY*
 
 **Transmission Loss Graph:**
 ![Approach B TL Graph](images/tl-approach-b.png)
@@ -206,6 +211,9 @@ Three viable RWAR approaches for this project:
 | Wall thickness | ~12-14" |
 | Estimated STC | 60-68 |
 
+**Cost:** $40.46/SF (Contracted) — [See detailed breakdown](#reference-cost-breakdown-approach-c)
+*Requires skilled mason for both wythes*
+
 **Transmission Loss Graph:**
 ![Approach C TL Graph](images/tl-approach-c.png)
 
@@ -225,17 +233,19 @@ Three viable RWAR approaches for this project:
 
 ### Combined Transmission Loss Comparison
 
-*See individual approach graphs above, or the [forum post comparison](../../open-questions/transmission-loss-comparison-abc.png) for all three overlaid.*
+![Transmission Loss Comparison - All Approaches](images/transmission-loss-comparison-abc.png)
 
 ---
 
 ## Comparison Matrix
 
-| Approach | Type | Total Mass | Resonance | STC | Thickness | DIY | Foundation |
-|----------|------|------------|-----------|-----|-----------|-----|------------|
-| **A. Double-Stud Wood** | RWAR | 43 kg/m² | ~41 Hz | 55-63 | 11-12" | Moderate | Light |
-| **B. CMU + Wood Inner** | RWAR | 441 kg/m² | ~42 Hz | 60-68 | 14" | Hard | Heavy |
-| **C. Double Brick** | RWAR | 390 kg/m² | ~19 Hz | 60-68 | 12-14" | Very Hard | Heavy |
+| Approach | Total Mass | Resonance | STC | Thickness | $/SF (DIY) | $/SF (Contracted) | Foundation |
+|----------|------------|-----------|-----|-----------|------------|-------------------|------------|
+| **A. Double-Stud Wood** | 43 kg/m² | ~41 Hz | 55-63 | 11-12" | $7.43 | $17.43 | Light |
+| **B. CMU + Wood Inner** | 441 kg/m² | ~42 Hz | 60-68 | 14" | —* | $25.42 | Heavy (+$2-4K) |
+| **C. Double Brick** | 390 kg/m² | ~19 Hz | 60-68 | 12-14" | —* | $40.46 | Heavy (+$2-4K) |
+
+*\*Masonry requires contractor; DIY not practical*
 
 ---
 
@@ -336,6 +346,128 @@ For masonry outer shells (CMU, brick), the inner frame can be:
 - **Matching masonry**: Maximum mass, simpler conceptually, but heavier, more expensive, harder to finish interior
 
 Most studio builds use wood inner frames for practical reasons, and the dissimilar materials actually provide an acoustic advantage by avoiding shared resonant frequencies.
+
+---
+
+## Reference: Cost Breakdowns
+
+*Based on 803 sq ft wall area (73 linear ft × 11 ft height)*
+*Prices as of January 2026*
+
+### Reference: Cost Breakdown — Approach A: Double-Stud Wood Frame
+
+| Component | Quantity | Unit Cost | Total | Notes |
+|-----------|----------|-----------|-------|-------|
+| **Outer Wall** |||||
+| 2×4 studs (8 ft) | 74 | $4.50 | $333 | 24" OC + plates |
+| 2×4 top/bottom plates | 146 LF | $0.56/LF | $82 | Double top plate |
+| 1/2" OSB sheathing | 26 sheets | $32 | $832 | 4×8 sheets |
+| R-13 fiberglass batts | 803 SF | $0.50/SF | $402 | |
+| **Inner Wall** |||||
+| 2×4 studs (8 ft) | 74 | $4.50 | $333 | 24" OC + plates |
+| 2×4 top/bottom plates | 146 LF | $0.56/LF | $82 | Double top plate |
+| R-13 fiberglass batts | 803 SF | $0.50/SF | $402 | |
+| 5/8" drywall | 52 sheets | $16 | $832 | 2 layers × 26 sheets |
+| Green Glue | 52 tubes | $20 | $1,040 | 1 tube per sheet |
+| **Exterior Finish** |||||
+| House wrap | 803 SF | $0.15/SF | $120 | |
+| Siding (LP SmartSide) | 803 SF | $1.50/SF | $1,205 | Mid-range option |
+| **Fasteners/misc** | — | — | $300 | Screws, nails, tape |
+| **TOTAL (DIY)** | | | **$5,963** | |
+| **Framing Labor** | 1,606 SF | $5/SF | $8,030 | 2 walls × 803 SF |
+| **TOTAL (Contracted)** | | | **$13,993** | |
+
+**Price Sources:**
+- 2×4 lumber: [LatestCost - 2×4 Lumber Cost Guide 2026](https://latestcost.com/2x4-lumber-cost/) — $3.50-$6.00 retail
+- OSB sheathing: [Angi - Cost of OSB Board](https://www.angi.com/articles/cost-of-osb-board.htm) — $32-$58/sheet
+- Drywall: [HomeGuide - Drywall Prices 2026](https://homeguide.com/costs/sheetrock-drywall-prices) — $10-$20/sheet
+- R-13 insulation: [HomeAdvisor - Insulation Cost 2026](https://www.homeadvisor.com/cost/insulation/) — $0.25-$6.75/SF
+- Green Glue: [SoundAway](https://www.soundaway.com/green-glue-p/12003.htm) — ~$20/tube retail
+- Framing labor: [HomeGuide - Cost to Frame a House](https://homeguide.com/costs/cost-to-frame-a-house) — $7-$13/SF average
+
+---
+
+### Reference: Cost Breakdown — Approach B: CMU + Decoupled Wood Inner Frame
+
+| Component | Quantity | Unit Cost | Total | Notes |
+|-----------|----------|-----------|-------|-------|
+| **Outer Wall (CMU)** |||||
+| 8" CMU blocks | 803 | $2.25 | $1,807 | 1 block/SF |
+| Grout fill (solid) | 2.5 CY | $150/CY | $375 | ~0.033 CF/block |
+| Mortar | 20 bags | $12 | $240 | Type S, 80 lb |
+| Rebar (#4) | 300 LF | $0.75/LF | $225 | Vertical + horizontal |
+| **Inner Wall (Wood)** |||||
+| 2×4 studs (8 ft) | 74 | $4.50 | $333 | 24" OC + plates |
+| 2×4 top/bottom plates | 146 LF | $0.56/LF | $82 | Double top plate |
+| R-13 fiberglass batts | 803 SF | $0.50/SF | $402 | |
+| 5/8" drywall | 52 sheets | $16 | $832 | 2 layers × 26 sheets |
+| Green Glue | 52 tubes | $20 | $1,040 | 1 tube per sheet |
+| Isolation pads | 74 | $3 | $222 | Under each stud |
+| **Exterior Finish** |||||
+| Stucco (3-coat) | 803 SF | $3.00/SF | $2,409 | Materials only |
+| **Fasteners/misc** | — | — | $400 | Anchors, ties, etc. |
+| **TOTAL (DIY)** | | | **$8,367** | Inner wall only |
+| **CMU Labor** | 803 SF | $10/SF | $8,030 | Mason contractor |
+| **Inner Framing Labor** | 803 SF | $5/SF | $4,015 | Carpenter |
+| **TOTAL (Contracted)** | | | **$20,412** | |
+
+**Price Sources:**
+- CMU blocks: [CountBricks - Concrete Block Prices 2025](https://www.countbricks.com/post/concrete-block-prices) — $1.70-$2.45/block delivered
+- CMU labor: [HomeGuide - Cinder Block Wall Cost 2026](https://homeguide.com/costs/cinder-block-wall-cost) — $5-$10/block labor
+- Grout/concrete: [HomeGuide - Concrete Prices 2026](https://homeguide.com/costs/concrete-prices) — $119-$147/CY
+- Mortar: [McCoy's Building Supply](https://www.mccoys.com/shop/building-materials/pl/103105105104000000/masonry-mortar-mix) — ~$12-$17/bag
+
+---
+
+### Reference: Cost Breakdown — Approach C: Double Brick
+
+| Component | Quantity | Unit Cost | Total | Notes |
+|-----------|----------|-----------|-------|-------|
+| **Outer Brick Wythe** |||||
+| Standard red brick | 5,621 | $0.55 | $3,092 | 7 bricks/SF |
+| Mortar | 45 bags | $12 | $540 | Type S, 80 lb |
+| Wall ties | 200 | $0.50 | $100 | Cavity ties |
+| **Inner Brick Wythe** |||||
+| Standard red brick | 5,621 | $0.55 | $3,092 | 7 bricks/SF |
+| Mortar | 45 bags | $12 | $540 | Type S, 80 lb |
+| **Interior Finish** |||||
+| Furring strips (1×3) | 150 LF | $0.80/LF | $120 | For drywall attachment |
+| 5/8" drywall | 26 sheets | $16 | $416 | Single layer |
+| **Exterior Finish** |||||
+| (Brick is finish) | — | — | $0 | |
+| **Fasteners/misc** | — | — | $500 | Anchors, flashing, etc. |
+| **TOTAL (DIY)** | | | **$8,400** | Materials only |
+| **Brick Labor** | 1,606 SF | $15/SF | $24,090 | 2 wythes × 803 SF |
+| **TOTAL (Contracted)** | | | **$32,490** | |
+
+**Price Sources:**
+- Brick: [HomeAdvisor - Brick Prices 2026](https://www.homeadvisor.com/cost/siding/brick-prices) — $0.35-$0.90/brick
+- Brick: [HomeGuide - Brick Prices 2026](https://homeguide.com/costs/brick-prices) — $350-$900 per 1,000
+- Brick labor: [LatestCost - Brick Cost Per Brick 2026](https://latestcost.com/brick-cost-per-brick-price-budget/) — $9-$28/SF labor
+- Brick installed: [LatestCost - Brick Cost Per SF Installed](https://latestcost.com/brick-cost-per-square-foot-installed/) — $9-$41/SF total
+
+---
+
+### Reference: Cost Comparison Summary
+
+| Approach | DIY | $/SF | Contracted | $/SF | Foundation |
+|----------|-----|------|------------|------|------------|
+| **A. Double-Stud Wood** | $5,963 | $7.43 | $13,993 | $17.43 | Light |
+| **B. CMU + Wood Inner** | $8,367* | $10.42 | $20,412 | $25.42 | Heavy (+$2-4K) |
+| **C. Double Brick** | $8,400* | $10.46 | $32,490 | $40.46 | Heavy (+$2-4K) |
+
+*\*DIY for B/C = materials only; masonry requires contractor*
+
+**Labor assumptions:**
+- Framing: $5/SF (mid-range for wall framing)
+- CMU: $10/SF (grouted block with rebar)
+- Brick: $15/SF per wythe (skilled mason)
+
+**Total wall cost with foundation impact:**
+- A (DIY): ~$6,000 - $8,000
+- A (Contracted): ~$14,000 - $16,000
+- B (Contracted): ~$22,400 - $24,400
+- C (Contracted): ~$34,500 - $36,500
 
 ---
 ---

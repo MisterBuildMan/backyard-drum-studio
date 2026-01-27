@@ -44,7 +44,9 @@ Complete all design decisions, create construction drawings, and establish budge
     - _Started: 2026-01-24_
     - Standard framing, double-stud, staggered-stud, CMU
     - _Requirements: 2.1_
-  - [ ] 2.2 Get material cost estimates for each option
+  - [x] 2.2 Get material cost estimates for each option
+    - _Completed: 2026-01-26_
+    - _Notes: Added cost estimates section to wall-assembly.md with $/SF for all 3 RWAR approaches_
     - _Requirements: 2.2_
   - [ ] 2.3 Evaluate DIY feasibility for each option
     - _Requirements: 2.4_
@@ -53,10 +55,14 @@ Complete all design decisions, create construction drawings, and establish budge
   - [ ] 2.5 Select wall assembly and document reasoning
     - _Requirements: 2.3, 2.5_
 
-- [ ] 3. Analyze cost vs. soundproofing trade-offs
-  - [ ] 3.1 Calculate total wall cost for each assembly option
+- [-] 3. Analyze cost vs. soundproofing trade-offs
+  - [x] 3.1 Calculate total wall cost for each assembly option
+    - _Completed: 2026-01-26_
+    - _Notes: A=$5,963, B=$8,367, C=$8,400 (materials only, 803 SF wall area)_
     - _Requirements: 3.2_
-  - [ ] 3.2 Create cost/STC comparison chart
+  - [x] 3.2 Create cost/STC comparison chart
+    - _Completed: 2026-01-26_
+    - _Notes: Added comparison summary table to wall-assembly.md_
     - _Requirements: 3.1, 3.2_
   - [ ] 3.3 Identify diminishing returns threshold
     - _Requirements: 3.3_
