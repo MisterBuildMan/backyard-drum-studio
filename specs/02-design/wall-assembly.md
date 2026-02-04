@@ -52,7 +52,33 @@ Where:
 - Higher frequencies are easier to block than lower frequencies
 - To block low frequencies (kick drum), you need significant mass
 
-**Why this matters for our approaches:**
+### Mass Law for Double Walls
+
+A double wall behaves differently depending on frequency relative to the resonance frequency (f₀):
+
+| Frequency Range | Behavior | TL Improvement Rate |
+|-----------------|----------|---------------------|
+| Below resonance (f < f₀) | Leaves move together as one mass | 6 dB/octave (like single wall) |
+| At resonance (f ≈ f₀) | Air spring couples masses — **worse** than single wall | Loss of 10-20 dB |
+| Above resonance (f > f₀) | Decoupling works — this is where double walls shine | **18 dB/octave** |
+| Above limit frequency (f > 55/d) | Cavity modes dominate | ~12 dB/octave |
+
+Above the resonance frequency, the transmission loss for a double wall is approximately:
+```
+TL ≈ TL₁ + TL₂ + 20 × log₁₀(f × d) - 29 dB
+```
+Where:
+- `TL₁`, `TL₂` = mass law TL for each leaf individually
+- `d` = cavity depth (meters)
+
+This 18 dB/octave improvement (vs 6 dB/octave for single walls) is why double walls are so effective — but only above the resonance frequency. For kick drum isolation (40-80 Hz), the resonance must be pushed as low as possible.
+
+**Sources:**
+- [Impulsion Acoustique - Double Wall Resonance](https://app.impulsion-acoustique.fr/article-double-wall-resonance) — explains the 18 dB vs 6 dB/octave difference
+- Hopkins, Carl. "Sound Insulation" (2007), Chapter 4 — full London/Sharp theory derivation
+
+### Why This Matters for Our Approaches
+
 | Assembly | Total Mass | Relative TL Advantage |
 |----------|------------|----------------------|
 | Double-stud wood (2× drywall each leaf) | ~43 kg/m² (8.8 lbs/ft²) | Baseline |
@@ -90,6 +116,33 @@ Use standard R-13 fiberglass batts — they're cheaper than mineral wool and per
 - [TM Soundproofing - Effect of Insulation in Walls](https://www.tmsoundproofing.com/effect-of-insulation-in-the-common-wall.html) — NRC Canada lab data
 - [Soundproofing Company - Insulation Recommendations](https://www.soundproofingcompany.com/ask-ted/what-type-of-insulation-do-you-recommend)
 - [Impulsion Acoustique - Double Wall Resonance](https://app.impulsion-acoustique.fr/article-double-wall-resonance) — isothermal vs adiabatic compression
+
+---
+
+## Critical (Coincidence) Frequency
+
+Every panel has a **critical frequency** (also called coincidence frequency) where the bending wavelength in the panel matches the wavelength of sound in air. At this frequency, the panel vibrates in sync with the incident sound wave and becomes nearly acoustically transparent.
+
+**Approximate critical frequencies:**
+
+| Material | Thickness | fc (approx) |
+|----------|-----------|-------------|
+| 1/2" drywall | 12.7mm | ~2700 Hz |
+| 5/8" drywall | 15.9mm | ~2200 Hz |
+| 2× 5/8" drywall (glued) | 31.8mm | ~1100 Hz |
+| 1/2" plywood | 12.7mm | ~2000 Hz |
+| 4" concrete | 100mm | ~150 Hz |
+| 8" CMU (grouted) | 200mm | ~80 Hz |
+| Single wythe brick | 90mm | ~150-200 Hz |
+
+**Key relationship:** `fc ∝ 1/thickness` — thicker panels have lower critical frequencies.
+
+**Why this matters for double walls:** If both leaves have the same critical frequency (e.g., identical drywall layers), they both become transparent at the same frequency, creating a deep notch in the TL curve. Using dissimilar materials (e.g., CMU at ~80 Hz + drywall at ~2200 Hz) spreads the coincidence dips across different frequencies so both leaves never fail simultaneously.
+
+**For drums:** The critical frequency of drywall (~2200 Hz) is well above kick drum frequencies (40-80 Hz), so coincidence is not a concern for low-frequency isolation. It's more relevant for mid/high frequencies like speech and cymbals.
+
+**Sources:**
+- Hopkins, Carl. "Sound Insulation" (2007), Chapter 3 — definitive reference for coincidence theory and material properties
 
 ---
 
