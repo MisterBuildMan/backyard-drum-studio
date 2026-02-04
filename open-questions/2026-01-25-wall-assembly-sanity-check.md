@@ -33,7 +33,8 @@ I'm planning a detached backyard drum studio (new construction, room-within-a-ro
   - Nighttime (10 PM - 7 AM): 50 dB(A) / 60 dB(C) at property line
   - I plan to play during daytime only, so targeting the 70 dB(A) / 80 dB(C) limit
 - **Source level:** Acoustic drums typically produce 105-115 dBC (I'm using 110 dBC as my design reference)
-- **Required isolation:** ~40 dB minimum to meet daytime limit, targeting 55-60 dB for safety margin
+- **Background noise:** 60 dBC (confirmed measurement, calm day)
+- **Required isolation:** 50 dB minimum (110 - 60 = 50), targeting 55 dB for safety margin
 
 ### The Concern
 I'm particularly worried about **kick drum frequencies (40-80 Hz)**. My understanding is that double-wall systems have a mass-spring-mass resonance frequency where isolation drops, and I want to make sure whichever assembly I choose doesn't have its resonance right in the kick drum range.

@@ -100,22 +100,20 @@ Drums drive all design decisions. Secondary uses must fit around the primary pur
 
 ### Isolation Target
 
-**Required isolation: 55 dB** (preliminary)
+**Required isolation: 50 dB**
 
 | Parameter | Value | Notes |
 |-----------|-------|-------|
 | Source level | 110 dBC | Reference value for acoustic drums (typical range 105-115 dBC) |
-| Background level | 55 dBC | Preliminary measurement at site (C-weighting, Slow) |
-| **Required isolation** | **55 dB** | Source - Background = Isolation needed |
+| Background level | 60 dBC | Confirmed measurement at site (C-weighting, Slow, calm day) |
+| **Required isolation** | **50 dB** | Source - Background = Isolation needed |
 
 **Measurement details:**
 - Equipment: PM6708 Digital Sound Level Meter
-- Date: 2026-01-25
-- Conditions: Windy day, readings spiked to 70+ dBC (likely wind interference)
-- Baseline: ~55 dBC at lowest sustained reading
-- Status: Preliminary — need additional samples on calm day to confirm
+- Initial reading: 2026-01-25 (windy day, readings spiked to 70+ dBC)
+- Confirmed reading: 2026-02-03 (calm day, ~60 dBC average over 1 minute)
 
-**Design recommendation:** Target 60 dB isolation to provide margin for:
+**Design recommendation:** Target 55 dB isolation to provide margin for:
 - Actual drum levels may exceed 110 dBC
 - Background may be quieter on calm days/evenings
 - Safety factor for low-frequency transmission

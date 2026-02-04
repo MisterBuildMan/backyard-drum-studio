@@ -9,9 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
 ## [Unreleased]
 
 ### Goals & Brief
-- **Updated:** Background noise measurement confirmed (Task 3.3) - 2026-02-03
-  - Follow-up measurement on calm day: ~55 dBC average over 1 minute
-  - Confirms 55 dBC baseline (previous reading had wind interference)
+- **Updated:** Background noise measurement corrected to 60 dBC (Task 3.3) - 2026-02-03
+  - Corrected from 55 dBC to 60 dBC based on calm day measurement
+  - New calculation: 110 dBC - 60 dBC = **50 dB isolation required**
+  - Design target updated: **55 dB** (with margin)
+  - This relaxes the isolation requirement from previous estimates
   - Video: `specs/00-goals-brief/media/background-noise-measurement-2026-02-03.mp4`
 
 ### Design

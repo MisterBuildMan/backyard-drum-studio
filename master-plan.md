@@ -6,7 +6,7 @@ High-level overview of project phases.
 
 - [x] 0. Goals & Brief
   - Project motivation and intended use
-  - Technical targets (60 dB isolation)
+  - Technical targets (55 dB isolation)
   - Timeline (end of 2026) and budget ($50k target, $70k cap)
 
 - [-] 1. Planning & Permits

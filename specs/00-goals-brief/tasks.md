@@ -28,22 +28,22 @@ This phase produces the project brief document that captures motivation, intende
   - [x] 3.3 Measure "How quiet do I need to be?" - background noise at studio site, at intended use times
     _Completed: 2026-01-25, updated 2026-02-03_
     _Equipment: PM6708 Digital Sound Level Meter_
-    _Notes: Initial reading (2026-01-25): 55-70+ dBC — spiked past 70 occasionally, likely wind interference. Follow-up reading (2026-02-03, calm day): ~55 dBC average over 1 minute. Confirms 55 dBC as baseline._
+    _Notes: Initial reading (2026-01-25): 55-70+ dBC — spiked past 70 occasionally, likely wind interference. Follow-up reading (2026-02-03, calm day): ~60 dBC average over 1 minute. Confirms 60 dBC as baseline._
     _Videos:_
     - _[media/background-noise-measurement-2026-01-25.mp4](media/background-noise-measurement-2026-01-25.mp4) (windy)_
     - _[media/background-noise-measurement-2026-02-03.mp4](media/background-noise-measurement-2026-02-03.mp4) (calm, 1 min avg)_
   - [x] 3.4 Calculate: Source level - Background level = Required isolation (dB)
     _Completed: 2026-01-25, confirmed 2026-02-03_
-    _Calculation: 110 dBC (drums, reference) - 55 dBC (background, confirmed) = **55 dB isolation required**_
-    _Notes: Background level confirmed at 55 dBC on calm day. Design target remains 60 dB with margin._
+    _Calculation: 110 dBC (drums, reference) - 60 dBC (background, confirmed) = **50 dB isolation required**_
+    _Notes: Background level confirmed at 60 dBC on calm day. Design target: 55 dB with margin._
   - [x] 3.5 Document all measurements and calculated target
     _Completed: 2026-01-25_
     _Notes: Updated brief.md Technical Targets section with isolation calculation and measurement details._
 
 - [x] 4. Establish Technical Targets
   - [x] 4.1 Document isolation target in dB (from Task 3)
-    _Completed: 2026-01-25_
-    _Notes: 55 dB required (preliminary), 60 dB design target with margin._
+    _Completed: 2026-01-25, updated 2026-02-03_
+    _Notes: 50 dB required, 55 dB design target with margin._
   - [x] 4.2 Define desired room acoustic character (RT60 target or subjective description)
     _Completed: 2026-01-25_
     _Notes: Deferred — will tune with treatment after construction. Isolation is priority._
@@ -103,15 +103,15 @@ This phase produces the project brief document that captures motivation, intende
     _Notes: All sections populated — Motivation, Intended Use, Technical Targets, Timeline & Budget, Master Checklist_
   - [x] 7.3 Identify any items that need follow-up research
     _Completed: 2026-01-25, updated 2026-02-03_
-    _Notes: Background noise confirmed at 55 dBC (calm day measurement 2026-02-03); drum SPL measurement pending kit setup_
+    _Notes: Background noise confirmed at 60 dBC (calm day measurement 2026-02-03); drum SPL measurement pending kit setup_
 
 - [x] 8. Update Project Documentation
   - [x] 8.1 Update `master-plan.md` to include Phase 0
     _Completed: 2026-01-25_
     _Notes: master-plan.md already includes Phase 0 (Project Setup)_
   - [x] 8.2 Reconcile isolation target with existing `02-design` STC references
-    _Completed: 2026-01-25_
-    _Notes: Design docs already target STC 55-60, consistent with calculated 55 dB required / 60 dB design target_
+    _Completed: 2026-01-25, updated 2026-02-03_
+    _Notes: Design docs target STC 55-60; calculated requirement is 50 dB (55 dB design target). Existing STC targets provide additional margin._
   - [x] 8.3 Add Soundman2020 forum links to `resources.md`
     _Completed: 2026-01-25_
     _Notes: Added all 10 steps from Soundman2020's studio building guide_
