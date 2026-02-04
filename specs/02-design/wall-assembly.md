@@ -392,6 +392,39 @@ Where:
 
 ---
 
+## Reference: Sheet Goods Properties
+
+Common sheet materials used in wall assemblies:
+
+| Material | Thickness | lbs/ft² | kg/m² | $/sheet (4×8) | $/ft² | $/lb | Notes |
+|----------|-----------|---------|-------|---------------|-------|------|-------|
+| **Drywall** ||||||||
+| Standard | 1/2" | 1.8 | 8.8 | $12-15 | $0.38-0.47 | $0.21-0.26 | Most common |
+| Standard | 5/8" | 2.2 | 10.7 | $15-20 | $0.47-0.63 | $0.21-0.29 | Recommended for sound |
+| **OSB** ||||||||
+| OSB | 1/2" | 1.7 | 8.3 | $22-28 | $0.69-0.88 | $0.41-0.52 | Structural rated |
+| OSB | 23/32" (3/4") | 2.5 | 12.2 | $30-38 | $0.94-1.19 | $0.38-0.48 | Good mass, structural |
+| **Plywood** ||||||||
+| Plywood | 1/2" | 1.4 | 6.8 | $35-45 | $1.09-1.41 | $0.78-1.01 | Lighter than OSB |
+| Plywood | 23/32" (3/4") | 1.9 | 9.3 | $45-60 | $1.41-1.88 | $0.74-0.99 | Structural rated |
+| **MDF** ||||||||
+| MDF | 1/2" | 1.9 | 9.3 | $30-40 | $0.94-1.25 | $0.49-0.66 | Dense but brittle |
+| MDF | 3/4" | 2.8 | 13.7 | $50-70 | $1.56-2.19 | $0.56-0.78 | Heaviest panel option |
+| **MLV** ||||||||
+| MLV 1 lb | 1/8" | 1.0 | 4.9 | ~$250/100ft² | $2.50 | $2.50 | Thin, flexible, expensive |
+| MLV 2 lb | 1/4" | 2.0 | 9.8 | ~$400/100ft² | $4.00 | $2.00 | Very expensive |
+
+**Key insight:** Drywall provides the cheapest mass per dollar (~$0.25/lb vs $0.40-0.80/lb for wood panels). Adding a third layer of 5/8" drywall is more cost-effective than switching to OSB or MDF for mass alone.
+
+**Structural note:** OSB and plywood are rated for structural applications (sheathing, subfloor). Drywall and MDF are non-structural — they add mass but no racking resistance. For inner wall leaves that only need to support their own weight, structural rating is unnecessary.
+
+**Sources:**
+- [Soundproofing Company - Building Materials Weights Guide](https://www.soundproofingcompany.com/soundproofing_101/building-materials-weights-guide)
+- [TM Soundproofing - Mass Loaded Vinyl](https://www.tmsoundproofing.com/Mass-Loaded-Vinyl-1-lb/)
+- Pricing based on Home Depot, Lowe's, and lumber yard prices as of January 2026
+
+---
+
 ## Reference: Inner Frame Material Consideration
 
 For masonry outer shells (CMU, brick), the inner frame can be:
