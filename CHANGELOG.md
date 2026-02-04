@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
 
 ## [Unreleased]
 
+### Goals & Brief
+- **Updated:** Background noise measurement confirmed (Task 3.3) - 2026-02-03
+  - Follow-up measurement on calm day: ~55 dBC average over 1 minute
+  - Confirms 55 dBC baseline (previous reading had wind interference)
+  - Video: `specs/00-goals-brief/media/background-noise-measurement-2026-02-03.mp4`
+
 ### Design
 - **Completed:** Wall assembly cost estimates (Tasks 2.2, 3.1, 3.2) - 2026-01-26
   - Added cost estimates section to `specs/02-design/wall-assembly.md`

@@ -26,14 +26,16 @@ This phase produces the project brief document that captures motivation, intende
     _Completed: 2026-01-25_
     _Notes: Using reference values (105-115 dBC) until kit can be measured. Will use 110 dBC as planning estimate._
   - [x] 3.3 Measure "How quiet do I need to be?" - background noise at studio site, at intended use times
-    _Completed: 2026-01-25_
+    _Completed: 2026-01-25, updated 2026-02-03_
     _Equipment: PM6708 Digital Sound Level Meter_
-    _Notes: Preliminary reading 55-70+ dBC (C-weighting, Slow). Low of ~55 dBC, spiked past 70 occasionally — likely wind interference. Need additional samples on calm day to confirm baseline._
-    _Video: [media/background-noise-measurement-2026-01-25.mp4](media/background-noise-measurement-2026-01-25.mp4)_
+    _Notes: Initial reading (2026-01-25): 55-70+ dBC — spiked past 70 occasionally, likely wind interference. Follow-up reading (2026-02-03, calm day): ~55 dBC average over 1 minute. Confirms 55 dBC as baseline._
+    _Videos:_
+    - _[media/background-noise-measurement-2026-01-25.mp4](media/background-noise-measurement-2026-01-25.mp4) (windy)_
+    - _[media/background-noise-measurement-2026-02-03.mp4](media/background-noise-measurement-2026-02-03.mp4) (calm, 1 min avg)_
   - [x] 3.4 Calculate: Source level - Background level = Required isolation (dB)
-    _Completed: 2026-01-25_
-    _Calculation: 110 dBC (drums, reference) - 55 dBC (background, preliminary) = **55 dB isolation required**_
-    _Notes: This is a preliminary estimate. Conservative — actual drum measurement may be higher (105-115 dBC range), and background may be lower on calm days. Design target should include margin._
+    _Completed: 2026-01-25, confirmed 2026-02-03_
+    _Calculation: 110 dBC (drums, reference) - 55 dBC (background, confirmed) = **55 dB isolation required**_
+    _Notes: Background level confirmed at 55 dBC on calm day. Design target remains 60 dB with margin._
   - [x] 3.5 Document all measurements and calculated target
     _Completed: 2026-01-25_
     _Notes: Updated brief.md Technical Targets section with isolation calculation and measurement details._
@@ -100,8 +102,8 @@ This phase produces the project brief document that captures motivation, intende
     _Completed: 2026-01-25_
     _Notes: All sections populated — Motivation, Intended Use, Technical Targets, Timeline & Budget, Master Checklist_
   - [x] 7.3 Identify any items that need follow-up research
-    _Completed: 2026-01-25_
-    _Notes: Background noise measurement needs additional samples on calm day; drum SPL measurement pending kit setup_
+    _Completed: 2026-01-25, updated 2026-02-03_
+    _Notes: Background noise confirmed at 55 dBC (calm day measurement 2026-02-03); drum SPL measurement pending kit setup_
 
 - [x] 8. Update Project Documentation
   - [x] 8.1 Update `master-plan.md` to include Phase 0
