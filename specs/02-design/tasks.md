@@ -66,7 +66,11 @@ Complete all design decisions, create construction drawings, and establish budge
     - _Requirements: 3.1, 3.2_
   - [ ] 3.3 Identify diminishing returns threshold
     - _Requirements: 3.3_
-  - [ ] 3.4 Document analysis and final selection rationale
+  - [ ] 3.4 Document all factors affecting sound at property line
+    - Wall TL, outdoor distance attenuation, ground absorption, barriers, atmospheric conditions
+    - Determine realistic total attenuation to avoid over-engineering
+    - _Requirements: 3.3_
+  - [ ] 3.5 Document analysis and final selection rationale
     - _Requirements: 3.4_
 
 - [ ] 4. Design foundation system
