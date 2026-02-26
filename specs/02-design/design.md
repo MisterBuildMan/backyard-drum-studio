@@ -20,7 +20,7 @@ This document serves as the index for all design decisions, specifications, and 
 | [Room Proportions](room-proportions.md) | Room modes, acoustic ratios, dimension calculations | In Progress |
 | [Kit Frequency Reference](kit-frequency-reference.md) | Drum/cymbal frequency ranges, critical bands for isolation | Complete |
 | [Structure Dimensions](structure-dimensions.md) | Exterior/interior dimensions, wall thickness | In Progress |
-| [Wall Assembly](wall-assembly.md) | RWAR options, STC ratings, comparison matrix | In Progress |
+| [Wall Assembly](wall-assembly/README.md) | RWAR options, STC ratings, comparison matrix | In Progress |
 | [Foundation](foundation.md) | Slab design, floating slab analysis | Not Started |
 | [Ceiling & Roof](ceiling-roof.md) | Roof style, ceiling assembly, decoupling | Not Started |
 | [Doors & Windows](doors-windows.md) | Door/window specs, STC ratings, egress | Not Started |

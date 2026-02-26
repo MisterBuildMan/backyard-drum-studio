@@ -10,7 +10,7 @@ Complete all design decisions, create construction drawings, and establish budge
 |----------|-------|
 | [room-proportions.md](room-proportions.md) | 1.1, 1.5 |
 | [structure-dimensions.md](structure-dimensions.md) | 1.2, 1.3, 1.4, 1.5, 1.6 |
-| [wall-assembly.md](wall-assembly.md) | 2.1-2.5, 3.1-3.4 |
+| [wall-assembly/](wall-assembly/README.md) | 2.1-2.5, 3.1-3.4 |
 | [distance-attenuation-analysis.md](distance-attenuation-analysis.md) | 3.4 |
 | [foundation.md](foundation.md) | 4.1-4.4 |
 | [ceiling-roof.md](ceiling-roof.md) | 5.1-5.4 |
