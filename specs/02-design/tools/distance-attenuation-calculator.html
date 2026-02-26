@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Attenuation Calculator — Drum Studio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1400px; margin: 0 auto; padding: 20px; background: #f5f5f5; color: #333; }
+        h1 { margin-bottom: 4px; }
+        .subtitle { color: #666; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: 320px 1fr; gap: 20px; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,.1); margin-bottom: 20px; }
+        h3 { margin-bottom: 12px; font-size: 15px; }
+        .input-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .input-row label { font-size: 13px; color: #555; flex: 1; }
+        .input-row input[type=range] { width: 120px; }
+        .input-row .val { width: 55px; text-align: right; font-weight: 600; font-size: 13px; }
+        .input-row input[type=number] { width: 70px; padding: 4px 6px; border: 1px solid #ddd; border-radius: 4px; text-align: right; }
+        .assembly-pick { margin-bottom: 8px; }
+        .assembly-pick label { font-size: 13px; display: flex; align-items: center; gap: 6px; cursor: pointer; }
+        .result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+        .result-box { padding: 14px; border-radius: 6px; text-align: center; }
+        .result-box .big { font-size: 28px; font-weight: 700; }
+        .result-box .label { font-size: 11px; color: #555; margin-top: 2px; }
+        .pass { background: #e8f5e9; }
+        .fail { background: #ffebee; }
+        .warn { background: #fff8e1; }
+        .neutral { background: #f5f5f5; }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 10px; }
+        th, td { padding: 6px 8px; border-bottom: 1px solid #eee; text-align: right; }
+        th { text-align: right; font-weight: 600; color: #666; font-size: 11px; }
+        th:first-child, td:first-child { text-align: left; }
+        .chart-wrap { position: relative; }
+        .note { font-size: 11px; color: #888; margin-top: 12px; padding: 10px; background: #fff8e1; border-radius: 4px; }
+        .legend-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; font-size: 12px; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 2px; display: inline-block; vertical-align: middle; margin-right: 4px; }
+        @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <h1>Distance Attenuation Calculator</h1>
+    <p class="subtitle">Estimate sound level at property line — accounts for wall TL, geometric divergence, and ground effect</p>
+
+    <div class="grid">
+        <div>
+            <div class="card">
+                <h3>Source Parameters</h3>
+                <div class="input-row">
+                    <label>Drum level (dBC)</label>
+                    <input type="range" id="srcLevel" min="100" max="120" value="110" oninput="update()">
+                    <span class="val" id="srcLevelVal">110</span>
+                </div>
+                <div class="input-row">
+                    <label>Distance to property line (ft)</label>
+                    <input type="range" id="distance" min="10" max="80" value="30" oninput="update()">
+                    <span class="val" id="distanceVal">30</span>
+                </div>
+                <div class="input-row">
+                    <label>Source height (ft)</label>
+                    <input type="number" id="srcHeight" value="5" min="1" max="15" step="0.5" onchange="update()">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Wall Assembly</h3>
+                <div class="assembly-pick"><label><input type="radio" name="wall" value="A" checked onchange="update()"> A. Double-Stud Wood</label></div>
+                <div class="assembly-pick"><label><input type="radio" name="wall" value="B" onchange="update()"> B. CMU + Wood Inner</label></div>
+                <div class="assembly-pick"><label><input type="radio" name="wall" value="C" onchange="update()"> C. Double Brick</label></div>
+            </div>
+
+            <div class="card">
+                <h3>Noise Ordinance (Cedar Park)</h3>
+                <div class="input-row"><label>Daytime dB(C) limit</label><input type="number" id="dayC" value="80" onchange="update()"></div>
+                <div class="input-row"><label>Nighttime dB(C) limit</label><input type="number" id="nightC" value="60" onchange="update()"></div>
+            </div>
+
+            <div class="card">
+                <h3>Ground Conditions</h3>
+                <div class="assembly-pick"><label><input type="radio" name="ground" value="soft" checked onchange="update()"> Soft (grass, soil)</label></div>
+                <div class="assembly-pick"><label><input type="radio" name="ground" value="hard" onchange="update()"> Hard (concrete, asphalt)</label></div>
+                <div class="assembly-pick"><label><input type="radio" name="ground" value="mixed" onchange="update()"> Mixed</label></div>
+            </div>
+
+            <div class="note">
+                <strong>Caveats:</strong> Wall TL uses simplified London/Sharp model. Real performance depends on construction quality, flanking, ceiling/door/roof paths. This estimates the <em>wall path only</em>. Weakest path dominates actual result.
+            </div>
+        </div>
+
+        <div>
+            <div class="card">
+                <h3>Result — Sound Level at Property Line</h3>
+                <div class="result-grid" id="results"></div>
+            </div>
+
+            <div class="card">
+                <h3>Attenuation Breakdown by Octave Band</h3>
+                <div class="chart-wrap"><canvas id="chart"></canvas></div>
+            </div>
+
+            <div class="card">
+                <h3>Detailed Table</h3>
+                <table id="detailTable"></table>
+            </div>
+        </div>
+    </div>
+
+<script>
+const OCTAVE_BANDS = [63, 125, 250, 500, 1000, 2000, 4000, 8000];
+const BAND_LABELS = ['63', '125', '250', '500', '1k', '2k', '4k', '8k'];
+
+// Approximate drum spectrum relative to overall dBC level
+// These offsets give per-band levels when added to (overall - 10*log10(N_bands_equivalent))
+// Calibrated so energy sum ≈ overall level
+const DRUM_SPECTRUM_DBC = {
+    63: -5, 125: -3, 250: -5, 500: -7, 1000: -10, 2000: -13, 4000: -17, 8000: -22
+};
+
+// Wall TL by octave band (from London/Sharp model estimates)
+const WALL_TL = {
+    A: { 63: 15, 125: 30, 250: 45, 500: 55, 1000: 60, 2000: 65, 4000: 65, 8000: 65 },
+    B: { 63: 25, 125: 40, 250: 55, 500: 65, 1000: 70, 2000: 75, 4000: 75, 8000: 75 },
+    C: { 63: 35, 125: 50, 250: 60, 500: 65, 1000: 70, 2000: 75, 4000: 75, 8000: 75 }
+};
+
+// Ground effect by octave band (ISO 9613-2 simplified)
+const GROUND_EFFECT = {
+    soft: { 63: -1.5, 125: -1.5, 250: -1.5, 500: -0.5, 1000: 1.5, 2000: 4, 4000: 4, 8000: 4 },
+    hard: { 63: 0, 125: 0, 250: 0, 500: 0, 1000: 0, 2000: 0, 4000: 0, 8000: 0 },
+    mixed: { 63: -0.75, 125: -0.75, 250: -0.75, 500: -0.25, 1000: 0.75, 2000: 2, 4000: 2, 8000: 2 }
+};
+
+// Atmospheric absorption dB/km at ~30C 50% RH (ISO 9613-1)
+const ATM_ALPHA = { 63: 0.1, 125: 0.3, 250: 0.7, 500: 1.2, 1000: 2.0, 2000: 5.6, 4000: 16, 8000: 55 };
+
+let chart = null;
+
+function getInputs() {
+    return {
+        srcLevel: +document.getElementById('srcLevel').value,
+        distFt: +document.getElementById('distance').value,
+        wall: document.querySelector('input[name=wall]:checked').value,
+        ground: document.querySelector('input[name=ground]:checked').value,
+        dayC: +document.getElementById('dayC').value,
+        nightC: +document.getElementById('nightC').value
+    };
+}
+
+function energySum(levels) {
+    let sum = 0;
+    for (const l of levels) sum += Math.pow(10, l / 10);
+    return 10 * Math.log10(sum);
+}
+
+function calc(inputs) {
+    const distM = inputs.distFt * 0.3048;
+    const Adiv = 20 * Math.log10(distM); // divergence from 1m reference
+    const wallTL = WALL_TL[inputs.wall];
+    const groundFx = GROUND_EFFECT[inputs.ground];
+    const bands = [];
+
+    for (const f of OCTAVE_BANDS) {
+        const srcBand = inputs.srcLevel + DRUM_SPECTRUM_DBC[f];
+        const aWall = wallTL[f];
+        const aDiv = Adiv;
+        const aAtm = ATM_ALPHA[f] * distM / 1000;
+        const aGround = groundFx[f];
+        const atProperty = srcBand - aWall - aDiv - aAtm + (aGround < 0 ? -aGround : -aGround);
+        // ground effect: negative = amplification (bad), positive = attenuation (good)
+        // so we subtract it: if aGround = -1.5 (amplification), result goes up by 1.5
+        const level = srcBand - aWall - aDiv - aAtm - aGround;
+        bands.push({ f, srcBand, aWall, aDiv: +aDiv.toFixed(1), aAtm: +aAtm.toFixed(1), aGround, level: +level.toFixed(1) });
+    }
+
+    const overallC = energySum(bands.map(b => b.level));
+    return { bands, overallC: +overallC.toFixed(1), Adiv: +Adiv.toFixed(1) };
+}
+
+function update() {
+    // Update display values
+    document.getElementById('srcLevelVal').textContent = document.getElementById('srcLevel').value;
+    document.getElementById('distanceVal').textContent = document.getElementById('distance').value;
+
+    const inputs = getInputs();
+    const result = calc(inputs);
+
+    // Results boxes
+    const dayMargin = inputs.dayC - result.overallC;
+    const nightMargin = inputs.nightC - result.overallC;
+    const dayClass = dayMargin >= 5 ? 'pass' : dayMargin >= 0 ? 'warn' : 'fail';
+    const nightClass = nightMargin >= 5 ? 'pass' : nightMargin >= 0 ? 'warn' : 'fail';
+
+    document.getElementById('results').innerHTML = `
+        <div class="result-box neutral">
+            <div class="big">${result.overallC}</div>
+            <div class="label">dBC at property line</div>
+        </div>
+        <div class="result-box neutral">
+            <div class="big">${result.Adiv}</div>
+            <div class="label">dB geometric divergence</div>
+        </div>
+        <div class="result-box ${dayClass}">
+            <div class="big">${dayMargin >= 0 ? '+' : ''}${dayMargin.toFixed(0)}</div>
+            <div class="label">dB margin — daytime (${inputs.dayC} dBC limit)</div>
+        </div>
+        <div class="result-box ${nightClass}">
+            <div class="big">${nightMargin >= 0 ? '+' : ''}${nightMargin.toFixed(0)}</div>
+            <div class="label">dB margin — nighttime (${inputs.nightC} dBC limit)</div>
+        </div>
+    `;
+
+    // Detail table
+    let html = `<tr><th>Octave (Hz)</th><th>Source (dBC)</th><th>Wall TL</th><th>Divergence</th><th>Atm.</th><th>Ground</th><th>At Prop. Line</th></tr>`;
+    for (const b of result.bands) {
+        const color = b.level > inputs.dayC ? '#c62828' : b.level > inputs.nightC ? '#e65100' : '#2e7d32';
+        html += `<tr>
+            <td>${b.f}</td><td>${b.srcBand.toFixed(0)}</td><td>-${b.aWall}</td><td>-${b.aDiv}</td><td>-${b.aAtm}</td>
+            <td>${b.aGround > 0 ? '-' : '+'}${Math.abs(b.aGround)}</td>
+            <td style="font-weight:700;color:${color}">${b.level}</td>
+        </tr>`;
+    }
+    html += `<tr style="border-top:2px solid #333;font-weight:700"><td>Overall</td><td>${inputs.srcLevel}</td><td colspan="4"></td><td>${result.overallC}</td></tr>`;
+    document.getElementById('detailTable').innerHTML = html;
+
+    // Chart
+    renderChart(result, inputs);
+}
+
+function renderChart(result, inputs) {
+    if (chart) chart.destroy();
+    const ctx = document.getElementById('chart').getContext('2d');
+
+    const propertyLevels = result.bands.map(b => b.level);
+    const wallTLs = result.bands.map(b => b.aWall);
+    const srcLevels = result.bands.map(b => b.srcBand);
+
+    chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: BAND_LABELS,
+            datasets: [
+                { label: 'At property line (dBC)', data: propertyLevels, backgroundColor: propertyLevels.map(l => l > inputs.dayC ? '#ef5350' : l > inputs.nightC ? '#ffa726' : '#66bb6a'), borderRadius: 3, order: 2 },
+                { label: 'Source level (dBC)', data: srcLevels, type: 'line', borderColor: '#999', borderDash: [4,4], pointRadius: 0, borderWidth: 1.5, fill: false, order: 1 },
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom', labels: { font: { size: 11 } } },
+                annotation: {
+                    annotations: {
+                        dayLine: { type: 'line', yMin: inputs.dayC, yMax: inputs.dayC, borderColor: '#f44336', borderWidth: 1.5, borderDash: [6,3],
+                            label: { display: true, content: `Daytime ${inputs.dayC} dBC`, position: 'start', font: { size: 10 }, backgroundColor: 'rgba(244,67,54,0.8)' }},
+                        nightLine: { type: 'line', yMin: inputs.nightC, yMax: inputs.nightC, borderColor: '#ff9800', borderWidth: 1.5, borderDash: [6,3],
+                            label: { display: true, content: `Nighttime ${inputs.nightC} dBC`, position: 'start', font: { size: 10 }, backgroundColor: 'rgba(255,152,0,0.8)' }}
+                    }
+                }
+            },
+            scales: {
+                y: { title: { display: true, text: 'Sound Level (dBC)' }, min: 0, max: 120 },
+                x: { title: { display: true, text: 'Octave Band Center Frequency (Hz)' } }
+            }
+        },
+        plugins: [{ id: 'annotationPlugin' }]
+    });
+}
+
+// Load annotation plugin
+const annotScript = document.createElement('script');
+annotScript.src = 'https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation';
+annotScript.onload = update;
+document.head.appendChild(annotScript);
+
+// Initial render (fallback if annotation plugin is slow)
+setTimeout(update, 500);
+</script>
+</body>
+</html>
