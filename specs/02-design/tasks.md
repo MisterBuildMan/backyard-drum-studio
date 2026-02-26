@@ -11,6 +11,7 @@ Complete all design decisions, create construction drawings, and establish budge
 | [room-proportions.md](room-proportions.md) | 1.1, 1.5 |
 | [structure-dimensions.md](structure-dimensions.md) | 1.2, 1.3, 1.4, 1.5, 1.6 |
 | [wall-assembly.md](wall-assembly.md) | 2.1-2.5, 3.1-3.4 |
+| [distance-attenuation-analysis.md](distance-attenuation-analysis.md) | 3.4 |
 | [foundation.md](foundation.md) | 4.1-4.4 |
 | [ceiling-roof.md](ceiling-roof.md) | 5.1-5.4 |
 | [doors-windows.md](doors-windows.md) | 6.1-6.5 |
@@ -66,9 +67,11 @@ Complete all design decisions, create construction drawings, and establish budge
     - _Requirements: 3.1, 3.2_
   - [ ] 3.3 Identify diminishing returns threshold
     - _Requirements: 3.3_
-  - [ ] 3.4 Document all factors affecting sound at property line
+  - [x] 3.4 Document all factors affecting sound at property line
     - Wall TL, outdoor distance attenuation, ground absorption, barriers, atmospheric conditions
     - Determine realistic total attenuation to avoid over-engineering
+    - _Completed: 2026-02-25_
+    - _Notes: Full analysis in distance-attenuation-analysis.md. Key finding: Approach A is sufficient for daytime use (~8 dB margin vs 80 dBC limit). 63 Hz band dominates. Interactive calculator in tools/distance-attenuation-calculator.html._
     - _Requirements: 3.3_
   - [ ] 3.5 Document analysis and final selection rationale
     - _Requirements: 3.4_

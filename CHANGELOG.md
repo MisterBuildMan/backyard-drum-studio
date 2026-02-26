@@ -17,6 +17,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), adapted 
   - Video: `specs/00-goals-brief/media/background-noise-measurement-2026-02-03.mp4`
 
 ### Design
+- **Completed:** Distance attenuation analysis (Task 3.4) - 2026-02-25
+  - Created `specs/02-design/distance-attenuation-analysis.md`
+  - Created interactive calculator `specs/02-design/tools/distance-attenuation-calculator.html`
+  - Accounts for wall TL, geometric divergence (~19 dB at 30 ft), atmospheric absorption, and ground effect
+  - Key finding: Approach A (double-stud wood) is sufficient for daytime use (~72 dBC at property line vs 80 dBC limit = 8 dB margin)
+  - 63 Hz band (kick drum) dominates property line levels in all approaches
+  - Nighttime use requires Approach B minimum (borderline) or Approach C (comfortable)
+  - Includes sensitivity analysis for louder playing (115 dBC) and closer/farther property lines
 - **Completed:** Wall assembly cost estimates (Tasks 2.2, 3.1, 3.2) - 2026-01-26
   - Added cost estimates section to `specs/02-design/wall-assembly.md`
   - Based on 803 sq ft wall area (73 LF × 11 ft height)

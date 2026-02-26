@@ -25,6 +25,7 @@ This document serves as the index for all design decisions, specifications, and 
 | [Doors & Windows](doors-windows.md) | Door/window specs, STC ratings, egress | Not Started |
 | [HVAC](hvac.md) | System selection, penetrations, noise control | Not Started |
 | [Electrical](electrical.md) | Subpanel, circuits, outlet layout | Not Started |
+| [Distance Attenuation](distance-attenuation-analysis.md) | Property line sound levels, ordinance compliance | Complete |
 | [Decoupling Strategy](decoupling-strategy.md) | Flanking paths, isolation details | Not Started |
 
 ---
