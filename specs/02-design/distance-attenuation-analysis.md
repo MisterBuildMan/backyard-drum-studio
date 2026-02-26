@@ -141,7 +141,7 @@ Per ISO 9613-2 simplified method, for propagation over soft ground (G = 1.0) wit
 | 2000 | +3 to +5 | Moderate attenuation |
 | 4000 | +3 to +5 | Moderate attenuation |
 
-**Key insight for drums:** At kick drum frequencies (40-80 Hz), the ground effect actually *adds* ~1.5 dB rather than attenuating. This is conservative (bad for us) and should be included in the analysis.
+**Key insight for drums:** At kick drum frequencies (45-100 Hz — see [kit-frequency-reference.md](kit-frequency-reference.md)), the ground effect actually *adds* ~1.5 dB rather than attenuating. This is conservative (bad for us) and should be included in the analysis.
 
 At higher frequencies (cymbals, snare attack), ground absorption helps by 3-5 dB.
 
@@ -155,7 +155,7 @@ Acoustic drums don't produce equal energy at all frequencies. Approximate octave
 
 | Octave Band (Hz) | Typical Level (dBC) | Dominant Source |
 |-------------------|--------------------|-----------------| 
-| 63 | 105 | Kick drum fundamental |
+| 63 | 105 | Kick sub-harmonic, low fundamental |
 | 125 | 107 | Kick drum, floor tom |
 | 250 | 105 | Toms, snare body |
 | 500 | 103 | Snare, toms |
@@ -248,7 +248,7 @@ Where A_div = 19.2 dB (constant across frequency).
 At ~72 dBC at the property line vs an 80 dBC daytime limit, Approach A has **8 dB of margin**. This is comfortable — even if the theoretical TL is optimistic by a few dB, you're still compliant.
 
 ### 2. The 63 Hz band dominates everything
-In all three approaches, the 63 Hz octave band is the loudest at the property line by a wide margin. This is the kick drum fundamental. Every other frequency is well controlled even by Approach A. The entire wall assembly decision comes down to: **how much do you need to attenuate 63 Hz?**
+In all three approaches, the 63 Hz octave band is the loudest at the property line by a wide margin. This captures the kick drum sub-harmonic (~45 Hz) and low fundamental energy. Every other frequency is well controlled even by Approach A. The entire wall assembly decision comes down to: **how much do you need to attenuate 63 Hz?**
 
 ### 3. Nighttime use requires Approach B or C
 If you ever want to play at night (or want margin against a strict neighbor complaint), Approach A falls short of the 60 dBC nighttime limit by ~12 dB. Approach B is borderline. Only Approach C comfortably meets the nighttime limit.

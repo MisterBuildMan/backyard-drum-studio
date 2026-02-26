@@ -22,7 +22,7 @@ A double-leaf wall system behaves as a mass-spring-mass system where:
 
 At the **resonance frequency**, the system actually performs *worse* than a single wall of equivalent mass—sound passes through more easily because the air spring couples the two masses together.
 
-**Critical insight for drums:** Below the resonance frequency, isolation drops off rapidly. Above it, isolation improves at 12-18 dB/octave (vs 6 dB/octave for single walls). For kick drum isolation (40-80 Hz), we need the resonance frequency as low as possible—ideally below 40 Hz.
+**Critical insight for drums:** Below the resonance frequency, isolation drops off rapidly. Above it, isolation improves at 12-18 dB/octave (vs 6 dB/octave for single walls). For kick drum isolation (45-100 Hz — see [kit-frequency-reference.md](kit-frequency-reference.md)), we need the resonance frequency as low as possible—ideally below 45 Hz.
 
 **How to lower resonance frequency:**
 1. **Increase mass** of one or both leaves (heavier walls = lower resonance)
@@ -71,7 +71,7 @@ Where:
 - `TL₁`, `TL₂` = mass law TL for each leaf individually
 - `d` = cavity depth (meters)
 
-This 18 dB/octave improvement (vs 6 dB/octave for single walls) is why double walls are so effective — but only above the resonance frequency. For kick drum isolation (40-80 Hz), the resonance must be pushed as low as possible.
+This 18 dB/octave improvement (vs 6 dB/octave for single walls) is why double walls are so effective — but only above the resonance frequency. For kick drum isolation (45-100 Hz), the resonance must be pushed as low as possible.
 
 **Sources:**
 - [Impulsion Acoustique - Double Wall Resonance](https://app.impulsion-acoustique.fr/article-double-wall-resonance) — explains the 18 dB vs 6 dB/octave difference
@@ -99,7 +99,7 @@ Adding fibrous insulation (fiberglass or mineral wool) to the air cavity between
 3. **Provides thermal insulation** — R-13 per stud bay adds up
 
 **What cavity insulation does NOT do:**
-- **Does not improve low-frequency isolation** — at kick drum frequencies (40-80 Hz), gains are essentially zero
+- **Does not improve low-frequency isolation** — at kick drum frequencies (45-100 Hz), gains are essentially zero
 - **Does not significantly affect STC** — lab tests show only 2-4 STC point improvement (empty vs. filled cavity)
 - **Does not block structural vibration** — insulation only absorbs airborne sound in the cavity, not vibration through studs/framing
 
@@ -139,7 +139,7 @@ Every panel has a **critical frequency** (also called coincidence frequency) whe
 
 **Why this matters for double walls:** If both leaves have the same critical frequency (e.g., identical drywall layers), they both become transparent at the same frequency, creating a deep notch in the TL curve. Using dissimilar materials (e.g., CMU at ~80 Hz + drywall at ~2200 Hz) spreads the coincidence dips across different frequencies so both leaves never fail simultaneously.
 
-**For drums:** The critical frequency of drywall (~2200 Hz) is well above kick drum frequencies (40-80 Hz), so coincidence is not a concern for low-frequency isolation. It's more relevant for mid/high frequencies like speech and cymbals.
+**For drums:** The critical frequency of drywall (~2200 Hz) is well above kick drum frequencies (45-100 Hz), so coincidence is not a concern for low-frequency isolation. It's more relevant for mid/high frequencies like speech and cymbals.
 
 **Sources:**
 - Hopkins, Carl. "Sound Insulation" (2007), Chapter 3 — definitive reference for coincidence theory and material properties
@@ -190,7 +190,7 @@ Three viable RWAR approaches for this project:
 
 **Cons:**
 - Lower mass means less low-frequency isolation
-- Resonance frequency (~41 Hz) is at edge of kick drum range
+- Resonance frequency (~41 Hz) is below kick drum range for this kit
 - Thicker walls reduce interior space
 
 ---

@@ -36,7 +36,7 @@ Using 1:1.4:1.9 ratio:
 *Exterior assumes ~12" walls on each side
 
 **Recommendation:** The 10 ft ceiling is the sweet spot:
-- Pushes the first vertical mode (56 Hz) below kick drum fundamentals (60-80 Hz)
+- Pushes the first vertical mode (56 Hz) below kick drum fundamental (80-100 Hz)
 - Provides 266 sq ft - ample room for drums, mics, and movement
 - Still well under the 920 sq ft footprint limit
 - Exterior height with roof will be under the 15 ft principal residence limit

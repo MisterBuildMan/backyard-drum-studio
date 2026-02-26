@@ -65,7 +65,7 @@ Think of room modes as cushions holding up a blanket. Evenly spaced cushions = s
 ## Drum-Specific Considerations
 
 **Why drums are acoustically demanding:**
-- Kick drum fundamentals: 40-80 Hz (deep in room mode territory) [6]
+- Kick drum fundamentals: 45-100 Hz (deep in room mode territory) — see [kit-frequency-reference.md](kit-frequency-reference.md)
 - Floor tom fundamentals: 60-100 Hz
 - Snare/toms: 100-400 Hz fundamentals with harmonics extending much higher
 - Cymbals: 300 Hz - 15 kHz+
@@ -77,7 +77,7 @@ The 1:1.4:1.9 ratio is the best choice for a drum studio because:
 1. **Established pedigree**: This is Louden's "best ratio" from his seminal 1971 paper [4], independently confirmed by Rindel's 2020 research as Optimum B [3]
 2. **Practical volume**: With a 9 ft ceiling, this ratio produces ~54 m³ (~1,900 ft³): 9 × 12.6 × 17.1 ft = 1,939 ft³. This is adequate for a drum room while staying within site constraints.
 3. **Excellent frequency spacing**: FSI of 1.51 ensures even distribution of room modes in the kick/tom frequency range
-4. **Supports 29 musical tones** in the A0-A3 range (27.5-220 Hz), covering kick drum fundamentals (40-80 Hz) and floor tom range
+4. **Supports 29 musical tones** in the A0-A3 range (27.5-220 Hz), covering kick drum frequencies (45-100 Hz) and floor tom range
 5. **Adequate floor space**: ~212 sq ft interior provides room for the kit plus 3-6 ft clearance for mic placement
 6. **Follows the L/W ≈ W/H rule**: 1.9/1.4 ≈ 1.36 and 1.4/1 = 1.4 - nearly equal as recommended by Rindel
 
@@ -180,11 +180,11 @@ Using interior dimensions of 9 ft (H) × 12.5 ft (W) × 17 ft (L), the first 10 
 
 **Analysis:**
 - **No mode stacking** - each mode is at a different frequency ✓
-- **Good spacing in kick drum range (40-80 Hz)**: 45, 55, 62, 66, 70, 77 Hz ✓
+- **Good spacing in kick drum range (45-100 Hz)**: 45, 55, 62, 66, 70, 77 Hz ✓
 - **First three axial modes well separated**: 33 Hz (length), 45 Hz (width), 62 Hz (height) ✓
 - Compare to a cube where modes 1, 2, and 3 would all be at the same frequency
 
-This distribution ensures the kick drum (40-80 Hz fundamentals) and floor toms (60-100 Hz) will have consistent, even bass response throughout the room.
+This distribution ensures the kick drum (45-100 Hz) and floor toms (60-100 Hz) will have consistent, even bass response throughout the room.
 
 ---
 
