@@ -12,6 +12,7 @@ This project requires a **room-within-a-room (RWAR)** design — a double-leaf s
 |----------|-------------|
 | [theory.md](theory.md) | Double wall resonance, mass law, cavity insulation, critical frequency |
 | [materials.md](materials.md) | Sheet goods properties, surface mass data, cost-per-pound analysis |
+| [green-glue.md](green-glue.md) | Green Glue damping compound — lab data, frequency analysis, cost/benefit |
 | [approach-a.md](approach-a.md) | Double-stud wood frame — baseline and sub-variants |
 | [approach-b.md](approach-b.md) | CMU outer shell + decoupled wood inner frame |
 | [approach-c.md](approach-c.md) | Double brick |
